@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="bookmark" type="image/x-icon" href="img/logo.png" />
+        <link rel="shortcut icon" href="img/logo.png" />
+
+        <title>GVDG</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" href="css/mic_main.css" />
+        <link rel="stylesheet" href="css/dropdownMenu.css" />
+        <meta name="keywords" content="" />
+
+        <noscript>
+            <link rel="stylesheet" href="/css/noscript.css" />
+        </noscript>
+        <style type="text/css">
+            body:before {
+                content: " ";
+                position: fixed;
+                top: 0;
+                background: url("img/background.jpg") center 0 no-repeat;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-size: cover;
+            }
+        </style>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+                processEscapes: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+              }
+            });
+        </script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Queue(function() {
+              var all = MathJax.Hub.getAllJax(), i;
+              for (i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+              }
+            });
+        </script>
+        <script
+            async
+            type="text/javascript"
+            src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"
+        ></script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.scrollex.min.js"></script>
+        <script src="js/jquery.scrolly.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-00EKMQKGNE"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-00EKMQKGNE");
+        </script>
+        <meta name="generator" content="Hexo 5.2.0" />
+    </head>
+
+    <!-- Layouts -->
+
+    <!-- Single Links Page -->
+    <!-- <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <style type="text/css">
+        .category {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+
+        .our-team {
+            padding: 30px 0 40px;
+            background: #ffffff;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            height: 350px;
+        }
+
+        .our-team .pic {
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+            margin-bottom: 25px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .our-team .pic img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            transform: scale(1);
+            transition: all 0.9s ease 0s;
+        }
+
+        .our-team:hover .pic img {
+            transform: scale(1.3);
+        }
+
+        .our-team .team-content {
+            margin-bottom: 30px;
+        }
+
+        .our-team .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #4e5052;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+
+        .our-team .post {
+            display: block;
+            font-size: 15px;
+            color: #4e5052;
+            padding: 0 5px 0 5px;
+        }
+
+        .our-team .social {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: #4e5052;
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .social {
+            bottom: 0;
+        }
+
+        .our-team .social li {
+            display: inline-block;
+        }
+
+        .our-team .social li a {
+            display: block;
+            padding: 10px;
+            font-size: 17px;
+            color: #fff;
+            transition: all 0.3s ease 0s;
+        }
+
+        .our-team .social li a:hover {
+            color: #110;
+            background: #f7f5ec;
+        }
+
+        .box {
+            padding-top: 10px;
+            padding-left: 50px;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+            display: flex;
+            border: 0px;
+        }
+
+        .picd {
+            margin-top: 0px;
+            padding-top: 0px;
+            width: 20%;
+            display: inline;
+        }
+
+        .picd img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: all 0.9s ease 0s;
+        }
+
+        .desc_director {
+            width: 70%;
+            display: inline;
+            margin-left: 5%;
+            color: #4e5052;
+            font-size: 1rem;
+        }
+
+        .background {
+            background: #ffffff;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+        }
+
+        @media only screen and (max-width: 990px) {
+            .our-team {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            #boxd {
+                display: block;
+                padding: 2% 5%;
+            }
+        }
+    </style>
+
+    <body class="is-loading">
+        <!-- Wrapper 外包 s-->
+        <div id="wrapper" class="fade-in">
+            <!-- Intro 头部显示 s -->
+            <!-- Intro 头部显示 e -->
+            <!-- Header 头部logo start -->
+            <header id="header">
+                <a href="index.html" class="logo">GVDG</a>
+            </header>
+            <!-- Nav 导航条 start -->
+
+            <nav id="nav" class="special">
+                <ul class="menu links">
+                    <!-- Homepage  主页  -->
+                    <li>
+                        <a href="index.html" rel="nofollow">主页</a>
+                    </li>
+                    <!-- categories_name  分类   -->
+
+                    <!-- archives  归档   -->
+
+                    <!-- Pages 自定义   -->
+
+                    <li>
+                        <a href="articles.html" title="论文发表"> 论文发表 </a>
+                    </li>
+
+                    <li>
+                        <a href="awards.html" title="获奖与成果">
+                            获奖与成果
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="news.html" title="新闻"> 新闻 </a>
+                    </li>
+
+                    <li>
+                        <a href="teams.html" title="成员"> 成员 </a>
+                    </li>
+                    <li>
+                        <a href="wenhuaqiang.html" title="文化墙"> 文化墙 </a>
+                    </li>
+
+                    <li>
+                        <a href="photos.html" title="相册"> 相册 </a>
+                    </li>
+                </ul>
+                <!-- icons 图标   -->
+                <ul class="icons"></ul>
+            </nav>
+
+            <div class="demo">
+                <div class="container">
+                    <div class="category">指导老师</div>
+                    <div class="row">
+                        <div class="background">
+                            <div class="box">
+                                <div class="picd">
+                                    <img src="img/teams/shizhuo.png" />
+                                </div>
+                                <div class="desc_director">
+                                    <b>史卓</b>，
+                                    男，1978年出生，中山大学工学博士毕业，导师为国家杰出青年基金获得者罗笑南教授，华南理工大学出站博士后，
+                                    香港科技大学、美国新泽西理工学院访问学者，入选第二批广西千名骨干教师培育计划人选。现任桂林电子科技大学计算机与信息安全学院、艺术与设计学院副教授，
+                                    硕士生导师，国家数字家庭工程技术研究中心兼职副研究员。微软认证系统设计师(MCSD)，美国电气和电子工程师协会
+                                    (IEEE)会员，美国计算机学会(ACM)会员，中国计算机学会会员。近年来共发表学术论文40余篇，SCI/EI检索10余次，
+                                    曾在国际图形学界三大会议的Pacific
+                                    Graphics宣读论文，申请国家专利10项，其中授权发明专利2项，实用新型专利
+                                    2项，外观专利1项，获得软件著作权5项，参与制定省级地方标准1项。近年来主持、指导、主要参与纵横向项目20余项，
+                                    曾参与国家科技支撑项目、国家863计划项目、国家自然科学基金重点项目，现主持国家基金1项，参与国家基金1项，
+                                    主持省部级项目3项。
+                                    博士后研究成果“机床产品3D立体互动综合展示平台”；入选2012年国家工信部两化融合成果展，
+                                    广西区仅6个项目入选，吴邦国、贾庆林、李长春、李克强等多位国家领导人进行了参观。
+                                    <br />
+                                    <br />
+                                    <b>主要研究方向：</b>
+                                    本人主要研究方向为虚拟现实与可视化、数字化艺术设计、人工智能。招收计算机类学硕与专硕，艺术硕士和设计学硕士，
+                                    目前在读全职研究生11人，非全职3人<br />
+                                    <br />
+                                    <b>个人主页：</b>
+                                    <a
+                                        target="_blank"
+                                        rel="noopener"
+                                        href="https://www.guet.edu.cn/people2/1130144.html"
+                                    >
+                                        https://www.guet.edu.cn/people2/1130144.html
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                <div class="background">-->
+                        <!--                    <div class='box'>-->
+                        <!--                        <div class='picd'>-->
+                        <!--                            <img src='/members/王韵.jpg'>-->
+                        <!--                        </div>-->
+                        <!--                        <div class='desc_director'>-->
+                        <!--                            <b>王韵</b>，-->
+                        <!--                            复旦大学可视分析与智能决策研究组指导教师，复旦大学大数据学院行业导师，微软亚洲研究院主管研究员。博士毕业于香港科技大学计算机科学与工程系，本科毕业于复旦大学软件学院。主要研究领域是人机交互、数据可视化、数据智能，和人工智能。其研究主要以增强人与数据的交互为目标——通过探索人工智能算法，人机协同的模式，和自然语言界面，提升人对数据的分析-理解-表达-创作的能力及效率。研究成果发表在IEEE TVCG、IEEE VIS、ACM CHI、EuroVis等顶级学术期刊和会议。担任IEEE TVCG, ACM CHI, IEEE VIS等顶级期刊与会议的审稿人。<br>-->
+                        <!--                            <br>-->
+                        <!--                            <b>主要研究方向：</b>-->
+                        <!--                            人机交互、数据可视化、数据智能、和人工智能，具体包括：数据叙事，自动化设计，自然语言界面，人机协同创作等。<br>-->
+                        <!--                            <br>-->
+                        <!--                            <b>个人主页：</b>-->
+                        <!--                            <a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/research/people/wangyun/">-->
+                        <!--                                https://www.microsoft.com/en-us/research/people/wangyun/-->
+                        <!--                            </a>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+                    </div>
+                    <!--            <div class="category">研究助理/博士研究生</div>-->
+                    <!--            <div class="row">-->
+
+                    <!--                <div class="col-md-3 col-sm-6" style="margin-top: 30px">-->
+                    <!--                    <div class="our-team">-->
+                    <!--                        <div class="pic">-->
+                    <!--                            <img src="/members/赵宇恒.jpg">-->
+                    <!--                        </div>-->
+                    <!--                        <div class="team-content">-->
+                    <!--                            <h3 class="title">-->
+                    <!--                                赵宇恒-->
+                    <!--                            </h3>-->
+
+                    <!--                            <Span class="post">研究助理</Span>-->
+
+                    <!--                            <Span class="post">研究方向：文本可视分析</Span>-->
+
+                    <!--                        </div>-->
+                    <!--                        <ul class="social">-->
+
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+
+                    <!--                <div class="col-md-3 col-sm-6" style="margin-top: 30px">-->
+                    <!--                    <div class="our-team">-->
+                    <!--                        <div class="pic">-->
+                    <!--                            <img src="/members/陈玄.jpg">-->
+                    <!--                        </div>-->
+                    <!--                        <div class="team-content">-->
+                    <!--                            <h3 class="title">-->
+                    <!--                                陈玄-->
+                    <!--                            </h3>-->
+
+                    <!--                            <Span class="post">研究助理</Span>-->
+
+                    <!--                            <Span class="post">研究方向：区块链可视化</Span>-->
+
+                    <!--                        </div>-->
+                    <!--                        <ul class="social">-->
+
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+
+                    <!--                <div class="col-md-3 col-sm-6" style="margin-top: 30px">-->
+                    <!--                    <div class="our-team">-->
+                    <!--                        <div class="pic">-->
+                    <!--                            <img src="/members/林子玥.jpg">-->
+                    <!--                        </div>-->
+                    <!--                        <div class="team-content">-->
+                    <!--                            <h3 class="title">-->
+                    <!--                                林子玥-->
+                    <!--                            </h3>-->
+
+                    <!--                            <Span class="post">博士研究生</Span>-->
+
+                    <!--                            <Span class="post">研究方向：动态网络可视化</Span>-->
+
+                    <!--                        </div>-->
+                    <!--                        <ul class="social">-->
+
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+
+                    <!--            </div>-->
+
+                    <div class="category">硕士研究生</div>
+                    <div class="category">2019届</div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/19_zhangmengxue.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">张梦雪</h3>
+
+                                    <span class="post"
+                                        >研究方向：视觉传达设计</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/19_zenshuzheng.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">曾树珍</h3>
+
+                                    <span class="post"
+                                        >研究方向：计算机图形学</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/19_limingrui.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">李明睿</h3>
+
+                                    <span class="post"
+                                        >研究方向：数据可视化、<br />机器学习</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/19_yangmin.jpg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">杨铭</h3>
+
+                                    <span class="post">研究方向：数字人文</span>
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/19_lirongbin.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">李荣斌</h3>
+
+                                    <span class="post"
+                                        >研究方向：环境艺术设计、<br />少数民族艺术</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">2020届</div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/20_liuyurun.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">刘雨润</h3>
+
+                                    <span class="post"
+                                        >研究方向：数字媒体设计</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/20_zhouyuwei.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">周雨薇</h3>
+
+                                    <span class="post"
+                                        >研究方向：信息可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/20_zhangliang.jpg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">张梁</h3>
+
+                                    <span class="post"
+                                        >研究方向：信息可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/20_wangmeng.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">王萌</h3>
+
+                                    <span class="post"
+                                        >研究方向：数据可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/20_chenzihan.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">陈梓涵</h3>
+
+                                    <span class="post"
+                                        >研究方向：数字媒体设计</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">2021届</div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/21_hehaoen.pic.jpg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">何浩恩</h3>
+
+                                    <span class="post"
+                                        >研究方向：深度学习图像处理</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/21_wangyaning.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">王雅宁</h3>
+
+                                    <span class="post"
+                                        >研究方向：信息可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/21_zengyi.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">曾燚</h3>
+
+                                    <span class="post"
+                                        >研究方向：信息可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/21_yangjian.jpg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">杨剑</h3>
+
+                                    <span class="post"
+                                        >研究方向：虚拟现实可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/21_liangruichao.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">梁瑞超</h3>
+
+                                    <span class="post"
+                                        >研究方向：信息可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/21_mawanting.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">马婉婷</h3>
+
+                                    <span class="post"
+                                        >研究方向：信息可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/21_xiongbiao.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">熊彪</h3>
+
+                                    <span class="post"
+                                        >研究方向：自然语言生成、<br />数据可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">2022届</div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/22_libingjie.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">李冰洁</h3>
+
+                                    <span class="post"
+                                        >研究方向：数字媒体艺术</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/22_qiuxia.jpg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">邱霞</h3>
+
+                                    <span class="post"
+                                        >研究方向：视觉传达设计</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/22_xuziquan.png" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">徐自泉</h3>
+
+                                    <span class="post"
+                                        >研究方向：数字媒体艺术</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/22_wangjiayi.jpeg" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">王佳艺</h3>
+
+                                    <span class="post"
+                                        >研究方向：视觉传达设计</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">本科生</div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/test.png" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">小红</h3>
+                                    <span class="post"
+                                        >研究方向：网络安全可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/test.png" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">小橙</h3>
+
+                                    <span class="post"
+                                        >研究方向：网络安全可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/teams/test.png" />
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">小白</h3>
+
+                                    <span class="post"
+                                        >研究方向：历史人文可视化</span
+                                    >
+                                </div>
+                                <ul class="social"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--            <div class="category">访问学生</div>-->
+                    <!--            <div class="row">-->
+                    <!--                -->
+                    <!--                <div class="col-md-3 col-sm-6" style="margin-top: 30px">-->
+                    <!--                    <div class="our-team">-->
+                    <!--                        <div class="pic">-->
+                    <!--                            <img src="/members/谢李文含.jpg">-->
+                    <!--                        </div>-->
+                    <!--                        <div class="team-content">-->
+                    <!--                            <h3 class="title">-->
+                    <!--                                谢李文含-->
+                    <!--                            </h3>-->
+                    <!--                            <Span class="post">香港科技大学</Span>-->
+                    <!--                            <Span class="post">访问学生</Span><br>-->
+                    <!--                        </div>-->
+                    <!--                        <ul class="social">-->
+
+                    <!--                            <li>-->
+                    <!--                                <a target="_blank" rel="noopener" href="https://shellywhen.github.io" class="fa fa-link"></a>-->
+                    <!--                            </li>-->
+
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+
+                    <!--                <div class="col-md-3 col-sm-6" style="margin-top: 30px">-->
+                    <!--                    <div class="our-team">-->
+                    <!--                        <div class="pic">-->
+                    <!--                            <img src="/members/张宇.jpg">-->
+                    <!--                        </div>-->
+                    <!--                        <div class="team-content">-->
+                    <!--                            <h3 class="title">-->
+                    <!--                                张宇-->
+                    <!--                            </h3>-->
+                    <!--                            <Span class="post">University of Oxford</Span>-->
+                    <!--                            <Span class="post">访问学生</Span><br>-->
+                    <!--                        </div>-->
+                    <!--                        <ul class="social">-->
+
+                    <!--                            <li>-->
+                    <!--                                <a target="_blank" rel="noopener" href="https://zhangyu94.github.io/" class="fa fa-link"></a>-->
+                    <!--                            </li>-->
+
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+                    <!--                -->
+                    <!--            </div>-->
+
+                    <!--            <div class="category">毕业生</div>-->
+                    <!--            <div class="row">-->
+
+                    <!--                <div class="col-md-3 col-sm-6" style="margin-top: 30px">-->
+                    <!--                    <div class="our-team">-->
+                    <!--                        <div class="pic">-->
+                    <!--                            <img src="/members/李翊瑄.jpg">-->
+                    <!--                        </div>-->
+                    <!--                        <div class="team-content">-->
+                    <!--                            <h3 class="title">-->
+                    <!--                                李翊瑄-->
+                    <!--                            </h3>-->
+                    <!--                            <Span class="post">本科毕业生</Span>-->
+
+                    <!--                            <Span class="post">毕业去向：University of California, Santa Barbara</Span>-->
+
+                    <!--                        </div>-->
+                    <!--                        <ul class="social">-->
+
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+
+                    <!--                <div class="col-md-3 col-sm-6" style="margin-top: 30px">-->
+                    <!--                    <div class="our-team">-->
+                    <!--                        <div class="pic">-->
+                    <!--                            <img src="/members/王心宇.jpg">-->
+                    <!--                        </div>-->
+                    <!--                        <div class="team-content">-->
+                    <!--                            <h3 class="title">-->
+                    <!--                                -->
+                    <!--                            </h3>-->
+                    <!--                            <Span class="post">本科毕业生</Span>-->
+
+                    <!--                            <Span class="post">毕业去向：Columbia University</Span>-->
+
+                    <!--                        </div>-->
+                    <!--                        <ul class="social">-->
+
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+
+                    <!--            </div>-->
+                </div>
+            </div>
+
+            <!-- Copyright 版权 start -->
+            <div id="copyright">
+                <ul>
+                    <li>&copy; GVDG All rights reserved.</li>
+                    <!-- <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+                </ul> -->
+
+                    <span id="busuanzi_container_site_pv"> 2022 </span>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="bookmark" type="image/x-icon" href="img/logo.png" />
+        <link rel="shortcut icon" href="img/logo.png" />
+
+        <title>GVDG-桂林电子科技大学可视化设计团队</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" href="css/mic_main.css" />
+        <link rel="stylesheet" href="css/dropdownMenu.css" />
+        <link
+            href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+        <meta name="keywords" content="" />
+
+        <noscript>
+            <link rel="stylesheet" href="css/noscript.css" />
+        </noscript>
+        <style type="text/css">
+            body:before {
+                content: " ";
+                position: fixed;
+                top: 0;
+                background: url("img/background.jpg") center 0 no-repeat;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-size: cover;
+            }
+        </style>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+                processEscapes: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+              }
+            });
+        </script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Queue(function() {
+              var all = MathJax.Hub.getAllJax(), i;
+              for (i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+              }
+            });
+        </script>
+        <script
+            async
+            type="text/javascript"
+            src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"
+        ></script>
+
+        <script src="/vis-glu/js/jquery.min.js"></script>
+        <script src="/vis-glu/js/jquery.scrollex.min.js"></script>
+        <script src="/vis-glu/js/jquery.scrolly.min.js"></script>
+        <script src="/vis-glu/js/skel.min.js"></script>
+        <script src="/vis-glu/js/util.js"></script>
+        <script src="/vis-glu/js/main.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-00EKMQKGNE"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-00EKMQKGNE");
+        </script>
+        <meta name="generator" content="Hexo 5.2.0" />
+    </head>
+
+    <!-- Layouts -->
+
+    <!-- Single Publication Page -->
+    <!-- <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/vis-glu/css/demo.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"> -->
+
+    <style type="text/css">
+        .demo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande",
+                Helvetica, Arial, sans-serif;
+        }
+
+        .category {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+
+        .background {
+            width: 100%;
+            max-width: 72rem;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 15px 10px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 1.5em;
+            font-size: 0.9rem;
+        }
+
+        .record {
+            color: #4e5052;
+            list-style-position: outside;
+            list-style-type: none;
+            box-orient: horizontal;
+        }
+
+        .box {
+            padding-top: 15px;
+            padding-left: 50px;
+            margin-bottom: 0px;
+            padding-bottom: 15px;
+            display: flex;
+            border: 0px;
+        }
+
+        .pic {
+            margin-top: 0px;
+            padding-top: 0px;
+            width: 16rem;
+            display: inline;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #4e5052;
+        }
+
+        .pub {
+            color: #4e5052;
+            width: 70%;
+            margin-left: 25px;
+            margin-right: 15px;
+        }
+
+        .record:hover {
+            background-color: #f5f5f5;
+        }
+
+        @media screen and (max-width: 736px) {
+            .box {
+                display: block;
+                padding: 2% 5%;
+            }
+
+            .pub {
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    </style>
+
+    <body class="is-loading">
+        <!-- Wrapper 外包 s-->
+        <div id="wrapper" class="fade-in">
+            <!-- Intro 头部显示 s -->
+            <!-- Intro 头部显示 e -->
+            <!-- Header 头部logo start -->
+            <header id="header">
+                <a href="index.html" class="logo">GVDG</a>
+            </header>
+            <!-- Nav 导航条 start -->
+
+            <nav id="nav" class="special">
+                <ul class="menu links">
+                    <!-- Homepage  主页  -->
+
+                    <li>
+                        <a href="index.html" rel="nofollow">主页</a>
+                    </li>
+                    <!-- categories_name  分类   -->
+
+                    <!-- archives  归档   -->
+
+                    <!-- Pages 自定义   -->
+
+                    <li>
+                        <a href="articles.html" title="论文发表"> 论文发表 </a>
+                    </li>
+
+                    <li>
+                        <a href="awards.html" title="获奖与成果">
+                            获奖与成果
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="news.html" title="新闻"> 新闻 </a>
+                    </li>
+
+                    <li>
+                        <a href="teams.html" title="成员"> 成员 </a>
+                    </li>
+                    <li>
+                        <a href="wenhuaqiang.html" title="文化墙"> 文化墙 </a>
+                    </li>
+
+                    <li>
+                        <a href="photos.html" title="相册"> 相册 </a>
+                    </li>
+                </ul>
+                <!-- icons 图标   -->
+                <ul class="icons"></ul>
+            </nav>
+
+            <div class="demo">
+                <div class="container">
+                    <div class="category">2022</div>
+
+                    <div class="background">
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/YOLO.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >YOLO: An Efficient Attention Receptive
+                                        Field Model for Recognizing Symbols of
+                                        Zhuang Minority Patterns. </b
+                                    ><br />
+                                    WANG XIN, YAN JINGKE, QIN QIN, WANG QIN,CAI
+                                    JINGYE, DENG JIANHUA, WANG JUN,
+                                    <b>SHI ZHUO*</b>,FENG YI& CHEN BINGXU.<br />
+                                    <em>Mathematical Problems in Engineering</em
+                                    >,2022, 2022, 1-14.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/YOLO.html">
+                                        pdf (3.9MB)
+                                    </a>
+                                    <!--                            | Video |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/vis21_evaluationAD.mp4">-->
+                                    <!--                                mp4 (58.6MB)-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="category">2021</div>
+
+                    <div class="background">
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/asmart.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >A smart health data acquisition mobile
+                                        application based on heart rate and
+                                        blood oxygen module.</b
+                                    ><br />
+                                    WANG HAORAN, SHEN JING, ZHANG RAN, HE HAOEN,
+                                    SONG YUYING& <b>SHI ZHUO*</b><br />
+                                    <em
+                                        >Sanya, China: Institute of Electrical
+                                        and Electronics Engineers Inc</em
+                                    >, 2021.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/asmart.html">
+                                        pdf(3MB)
+                                    </a>
+
+                                    <!--                            | Benchmark |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://chinavis.org/2019/english/challenge_en.html">-->
+                                    <!--                                ChinaVis Data Challenge 2019-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/Applicayion.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >Application of interpolated loop
+                                        subdivision mesh deformation in
+                                        ecological environment animation.</b
+                                    ><br />
+                                    ZENG SHUZHEN, <b>SHI ZHUO*</b>, FENG YE, LI
+                                    MINGRUI, WANG MENG& SHEN JING. <br />
+                                    <em
+                                        >Xi'an, Shaanxi, Virtual, China: IOP
+                                        Publishing Ltd</em
+                                    >, 2021.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/Application.html">
+                                        pdf (0.87MB)
+                                    </a>
+
+                                    <!--                            | Video |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/vis20_cobridges.mp4">-->
+                                    <!--                                mp4 (26.9MB)-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/bilinear.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >Bilinear pyramid network for flower
+                                        species categorization.</b
+                                    ><br />
+                                    PANG CHENG, WANG WENHAO, LAN RUSHI,
+                                    <b>SHI ZHUO*</b>& LUO XIAONAN.<br />
+                                    <em>Multimedia Tools and Applications</em>,
+                                    2021, 80(1), 215-225.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/bilinear.html">
+                                        pdf(2.8MB)
+                                    </a>
+
+                                    <!--                            | Dataset |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="https://github.com/csuvis/IndoorTrajectoryData/">-->
+                                    <!--                                New Public-available Benchmark Data-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/researchon.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >Research on Simplified Mesh Deformation
+                                        Based on Differentiable Computation.</b
+                                    ><br />
+                                    <b>SHI ZHUO*</b>, ZENG SHUZHEN& LUO
+                                    XIAONAN.<br />
+                                    <em
+                                        >Chengdu, China: Institute of Electrical
+                                        and Electronics Engineers Inc</em
+                                    >,2021.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/researchon.html">
+                                        pdf(2.5MB)
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/yaozu.png" />
+                                </div>
+                                <div class="pub">
+                                    <b>瑶族纹样符号的智能分类方法.</b><br />
+                                    孔谦，<b>史卓*</b>，冯业，杨铭，张梦雪，曾树珍，李荣斌，玉珂，申婧.<br />
+                                    <em>包装工程</em>, 2021，42(10)，244-250.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/yaozu.html">
+                                        pdf (1.1MB)
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="category">
+                        Selected Publications before 2021
+                    </div>
+
+                    <div class="background">
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/article1.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >A Panoramic View System of Guilin
+                                        Tourism Based on Interactive Projection
+                                        Technology. </b
+                                    ><br />
+                                    YU KE, <b>SHI ZHUO*</b>, FENG YE, SHEN
+                                    TIANLONG, HUANG ZHIXIONG, GU YINWEI, DENG
+                                    YINGZHUO& LIANG YUSHI. <br />
+                                    <em
+                                        >Zhejiang, China: Institute of Physics
+                                        Publishing</em
+                                    >, 2020.<br />
+
+                                    | Paper |
+                                    <a href=""> pdf文件待补充 </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/article1.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >Classification Method of Ethnic
+                                        Minority Patterns Based on Faster
+                                        R-CNN.</b
+                                    ><br />
+                                    KONG QIAN, <b>SHI ZHUO*</b>, FENG YE, YANG
+                                    MING, ZHANG MENGXUE, ZENG SHUZHEN, LI
+                                    RONGBIN, YU KE& SHEN JING. r>
+                                    <em
+                                        >Zhejiang, China: Institute of Physics
+                                        Publishing</em
+                                    >, 2020.<br />
+
+                                    | Paper |
+                                    <a href=""> pdf文件待补充 </a>
+
+                                    <!--                            | Video |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/vis19_rmap.mp4">-->
+                                    <!--                                mp4 (35.7MB)-->
+                                    <!--                            </a>-->
+
+                                    <!--                            | Slides |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/vis19_rmap.pptx">-->
+                                    <!--                                pptx (53.3MB)-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/article1.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >Detection of ethnic Minority's symbols
+                                        based on deep learning.</b
+                                    ><br />
+                                    FENG YE, <b>SHI ZHUO*</b>, KONG QIAN, LI
+                                    MINGRUI, YANG MING, ZHANG MENGXUE& ZENG
+                                    SHUZHEN..<br />
+                                    <em>China: IOP Publishing Ltd</em>, 2020.<br />
+
+                                    | Paper |
+                                    <a href=""> pdf文件待补充 </a>
+
+                                    <!--                            | Video |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/vis19_vasabi.mp4">-->
+                                    <!--                                mp4 (39.3MB)-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/national.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >National Cultural Symbols Recognition
+                                        Based on Convolutional Neural
+                                        Network.</b
+                                    ><br />
+                                    HUANG ZHIXIONG, <b>SHI ZHUO*</b>, KONG QIAN,
+                                    LI RONGBIN, YANG MING, ZHANG MENGXUE& YU
+                                    KE.<br />
+                                    <em
+                                        >2020 IEEE International Conference on
+                                        Artificial Intelligence and Computer
+                                        Applications (ICAICA)</em
+                                    >, 2020.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/national.html">
+                                        pdf (0.37MB)
+                                    </a>
+
+                                    <!--                            | Video |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/tvcg19_lda.mp4">-->
+                                    <!--                                mp4 (6.3MB)-->
+                                    <!--                            </a>-->
+
+                                    <!--                            | Slides |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/vis19_disiem.pptx">-->
+                                    <!--                                pptx (10MB)-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/mingzuwenhua.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >民族文化符号智能分类在艺术设计中的意义初探——以壮锦装饰纹样为例</b
+                                    ><br />
+                                    李荣斌,<b>史卓*</b>,孔谦,冯业,李明睿,曾树珍,张梦雪,杨铭.<br />
+                                    <em>明日风尚</em>,2020(12),1-2.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/mingzuwenhuafuhao.html">
+                                        pdf (0.53MB)
+                                    </a>
+
+                                    <!--                            | Video |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/tvcg19_gap.mp4">-->
+                                    <!--                                mp4 (86.3MB)-->
+                                    <!--                            </a>-->
+
+                                    <!--                            | Slides |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/vis19_gap.pptx">-->
+                                    <!--                                pptx (50MB)-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img src="img/articles/indoor.png" />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >Indoor Position Algorithm Based on the
+                                        Fusion of Wifi and Image</b
+                                    ><br />
+                                    WANG ZHONGSHUAI, SOKLIEP PHENG, XU CHENGPEI,
+                                    HUANG JIAYU, LU LINFA& <b>SHI ZHUO</b>.
+                                    <br />
+                                    <em
+                                        >Guilin, China: Institute of Electrical
+                                        and Electronics Engineers Inc</em
+                                    >, 2019.<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/indoor.html">
+                                        pdf(0.68MB)
+                                    </a>
+
+                                    <!--                            | Video |-->
+                                    <!--                            <a target="_blank" rel="noopener" href="http://simingchen.me/docs/tvcg19_Cube.mp4">-->
+                                    <!--                                mp4 (9.9M)-->
+                                    <!--                            </a>-->
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="record">
+                            <div class="box" id="box">
+                                <div class="pic">
+                                    <img
+                                        src="img/articles/jiyuermianjiao.png"
+                                    />
+                                </div>
+                                <div class="pub">
+                                    <b
+                                        >基于二面角逆插值Loop细分的渐进传输方法.</b
+                                    ><br />
+                                    <b>史卓</b>,孔谦,玉珂,蓝如师,罗笑南.<br />
+                                    <em>图学学报</em>,2019,40(01)，92-98 .<br />
+
+                                    | Paper |
+                                    <a href="otherhtml/jiyuermianjiao.html">
+                                        pdf (4.9M)
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright 版权 start -->
+            <div id="copyright">
+                <ul>
+                    <li>&copy; GVDG All rights reserved.</li>
+                    <!-- <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+                </ul> -->
+
+                    <span id="busuanzi_container_site_pv"> 2022 </span>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 4.2.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/">个人笔记</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/miccall" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/post_img/mb.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >es搜索</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h3 id="为什么使用es搜索"><a href="#为什么使用es搜索" class="headerlink" title="为什么使用es搜索"></a><strong>为什么使用es搜索</strong></h3><p>用数据库查询的不好之处</p>
+<p>1.跟数据库查询,如果数据量十分庞大,会消耗大量的时间,效率极低,给用户体验极差</p>
+<p>2.不能分词,关系型数据库提供的查询,功能太弱</p>
+<p>3.不能分库分表,当数据量过于庞大(大于1亿),分库分表需要借助在不程序实现。（mycat）</p>
+<h3 id="es的概述"><a href="#es的概述" class="headerlink" title="es的概述"></a><strong>es的概述</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">官网：https:&#x2F;&#x2F;www.elastic.co&#x2F;</span><br><span class="line"></span><br><span class="line">特点：</span><br><span class="line"></span><br><span class="line">- ElasticSearch是一个基于Lucene的搜索服务器 </span><br><span class="line">- 是一个分布式、高扩展、高实时的搜索与数据分析引擎 </span><br><span class="line">- 基于RESTful web接口 </span><br><span class="line">- Elasticsearch是用Java语言开发的，并作为Apache许可条款下的开放源码发布，是一种 流行的企业级搜索引擎 </span><br><span class="line"></span><br><span class="line">场景：</span><br><span class="line"></span><br><span class="line">- 搜索：海量数据的查询 </span><br><span class="line">- 日志数据分析 </span><br><span class="line">- 实时数据分析</span><br><span class="line"></span><br><span class="line">索引（index） </span><br><span class="line"></span><br><span class="line">ElasticSearch存储数据的地方，可以理解成关系型数据库中的数据库概念。 </span><br><span class="line"></span><br><span class="line">映射（mapping） </span><br><span class="line"></span><br><span class="line">mapping定义了每个字段的类型、字段所使用的分词器等。相当于关系型数据库中的表结构。 </span><br><span class="line"></span><br><span class="line">文档（document） </span><br><span class="line"></span><br><span class="line">Elasticsearch中的最小数据单元，常以json格式显示。一个document相当于关系型数据库中的一行数据。 </span><br><span class="line"></span><br><span class="line">倒排索引 </span><br><span class="line"></span><br><span class="line">一个倒排索引由文档中所有不重复词的列表构成，对于其中每个词，对应一个包含它的文档id列表。 </span><br><span class="line"></span><br><span class="line">类型（type） _doc</span><br></pre></td></tr></table></figure>
+
+<h2 id="操作es-restful风格"><a href="#操作es-restful风格" class="headerlink" title="操作es restful风格"></a>操作es restful风格</h2><p>REST（Representational State Transfer），表述性状态转移，是一组架构约束条件和原则。满足这些约束条件和 原则的应用程序或设计就是RESTful。就是一种定义接口的规范。 </p>
+<ul>
+<li><p>基于HTTP。 </p>
+</li>
+<li><p>可以使用XML格式定义或JSON格式定义。 </p>
+</li>
+<li><p>每一个URI代表1种资源。 </p>
+</li>
+<li><p>客户端使用GET、POST、PUT、DELETE 4个表示操作方式的动词对服务端资源进行操作： </p>
+<p>GET：用来获取资源  </p>
+<p>POST：用来新建资源（也可以用于更新资源） </p>
+<p>PUT：用来更新资源 </p>
+<p>DELETE：用来删除资源</p>
+</li>
+</ul>
+<h2 id="操作es-索引-建表-index"><a href="#操作es-索引-建表-index" class="headerlink" title="操作es 索引 (建表) index"></a>操作es 索引 (建表) index</h2><p>使用postman测试：</p>
+<p>添加索引 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PUT http:&#x2F;&#x2F;ip:端口&#x2F;索引名称</span><br></pre></td></tr></table></figure>
+
+<p>查询索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GET http:&#x2F;&#x2F;ip:端口&#x2F;索引名称</span><br><span class="line">GET http:&#x2F;&#x2F;ip:端口&#x2F;索引名称1,索引名称2</span><br><span class="line">GET http:&#x2F;&#x2F;ip:端口&#x2F;_all</span><br></pre></td></tr></table></figure>
+
+<p>删除索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE http:&#x2F;&#x2F;ip:端口&#x2F;索引名称</span><br></pre></td></tr></table></figure>
+
+<p>关闭索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST http:&#x2F;&#x2F;ip:端口&#x2F;索引名称&#x2F;_close</span><br></pre></td></tr></table></figure>
+
+<p>打开索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST http:&#x2F;&#x2F;ip:端口&#x2F;索引名称&#x2F;_open</span><br></pre></td></tr></table></figure>
+
+<h2 id="操作es-映射-数据类型"><a href="#操作es-映射-数据类型" class="headerlink" title="操作es 映射 数据类型"></a>操作es 映射 数据类型</h2><h3 id="1简单数据类型"><a href="#1简单数据类型" class="headerlink" title=".1简单数据类型"></a>.1简单数据类型</h3><ul>
+<li><p>字符串</p>
+<p>text：会分词，不支持聚合</p>
+<p>select color,count(1) from pruduct group by color.   1 藏青色 2斩男色 </p>
+<p>keyword：不会分词，将全部内容作为一个词条，支持聚合。邮编030600，身份证号1424123112131311，特有名词：大文娱</p>
+</li>
+<li><p>数值</p>
+<p>age byte </p>
+</li>
+</ul>
+<h2 id="操作es-文档"><a href="#操作es-文档" class="headerlink" title="操作es 文档"></a>操作es 文档</h2><ul>
+<li><p>添加文档，指定id</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">PUT &#x2F;person&#x2F;_doc&#x2F;1</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot; :&quot;李四&quot;,</span><br><span class="line">  &quot;age&quot; : 20,</span><br><span class="line">  &quot;address&quot; :&quot;太原&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加文档，不指定id</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">POST &#x2F;person&#x2F;_doc&#x2F;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot; :&quot;王五&quot;,</span><br><span class="line">  &quot;age&quot; : 20,</span><br><span class="line">  &quot;address&quot; :&quot;武汉&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询指定id的文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;person&#x2F;_doc&#x2F;1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">PUT &#x2F;person&#x2F;_doc&#x2F;1</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot; :&quot;李四&quot;,</span><br><span class="line">  &quot;age&quot; : 21,</span><br><span class="line">  &quot;address&quot; :&quot;太原&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询所有文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;person&#x2F;_search</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除指定id文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE &#x2F;person&#x2F;_doc&#x2F;1</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="IK分词器"><a href="#IK分词器" class="headerlink" title="IK分词器"></a>IK分词器</h1><h2 id="视频14-分词器-介绍"><a href="#视频14-分词器-介绍" class="headerlink" title="视频14 分词器 介绍"></a>视频14 分词器 介绍</h2><p>1、分词器（Analyzer）：将一段文本，按照一定逻辑，分析成多个词语的一种工具</p>
+<p>2、ElasticSearch内置分词器：</p>
+<ul>
+<li>Standard Analyzer -默认分词器，按词切分，小写处理</li>
+<li>Simple Analyzer -按照非字母切分(符号被过滤),小写处理</li>
+<li>Stop Analyzer -小写处理，停用词过滤(the,a,is)</li>
+<li>Whitespace Analyzer -按照空格切分，不转小写</li>
+<li>Keyword Analyzer -不分词，直接将输入当作输出</li>
+<li>Patter Analyzer -正则表达式，默认\W+(非字符分割)</li>
+<li>Language -提供了30多种常见语言的分词器</li>
+</ul>
+<p>3、ElasticSearch内置分词器对中文很不友好，处理方式为：一个字一个词</p>
+<p>测试：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET _analyze</span><br><span class="line">&#123;</span><br><span class="line">  &quot;analyzer&quot;: &quot;standard&quot;,</span><br><span class="line">  &quot;text&quot;: [&quot;我爱北京天安门&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="ik分词器使用"><a href="#ik分词器使用" class="headerlink" title="ik分词器使用"></a>ik分词器使用</h2><h3 id="ik-max-word"><a href="#ik-max-word" class="headerlink" title="ik_max_word"></a><strong>ik_max_word</strong></h3><p>会将文本做最细粒度的拆分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;_analyze</span><br><span class="line">&#123;</span><br><span class="line">  &quot;analyzer&quot;: &quot;ik_max_word&quot;,</span><br><span class="line">  &quot;text&quot;: &quot;乒乓球明年总冠军&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ik-smart"><a href="#ik-smart" class="headerlink" title="ik_smart"></a><strong>ik_smart</strong></h3><p>会做最粗粒度的拆分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;_analyze</span><br><span class="line">&#123;</span><br><span class="line">  &quot;analyzer&quot;: &quot;ik_smart&quot;,</span><br><span class="line">  &quot;text&quot;: &quot;乒乓球明年总冠军&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">这里会拆分成:乒乓球    明年    总冠军</span><br></pre></td></tr></table></figure>
+
+<h3 id="全文查询-meach"><a href="#全文查询-meach" class="headerlink" title="全文查询  meach"></a>全文查询  meach</h3><p>不能删除映射,只能删除索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">#添加映射</span><br><span class="line">PUT &#x2F;user1&#x2F;_mapping</span><br><span class="line">&#123;</span><br><span class="line">  poperties:&#123;</span><br><span class="line">    name:&#123;</span><br><span class="line">      type:&quot;text&quot;</span><br><span class="line">     &#125;,</span><br><span class="line">     age:&#123;</span><br><span class="line">       type:&quot;interger&quot;</span><br><span class="line">     &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#添加索引</span><br><span class="line">PUT user4</span><br><span class="line">&#123;</span><br><span class="line">  &quot;mappings&quot;: &#123;</span><br><span class="line">    &quot;properties&quot;: &#123;</span><br><span class="line">      &quot;name&quot;:&#123;</span><br><span class="line">        &quot;type&quot;: &quot;text&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &quot;age&quot;:&#123;</span><br><span class="line">        &quot;type&quot;: &quot;integer&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">GET user4&#x2F;_mapping</span><br><span class="line"></span><br><span class="line">#修改mapping</span><br><span class="line">PUT &#x2F;user4&#x2F;_mapping</span><br><span class="line">&#123;</span><br><span class="line">  &quot;properties&quot;:&#123;</span><br><span class="line">    &quot;gender&quot;:&#123;</span><br><span class="line">      &quot;type&quot; : &quot;text&quot;</span><br><span class="line">     &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">#不能删除映射 可以删除索引</span><br></pre></td></tr></table></figure>
+
+<h3 id="索引的增删改查"><a href="#索引的增删改查" class="headerlink" title="索引的增删改查"></a><strong>索引的增删改查</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">#查询索引</span><br><span class="line">GET user4</span><br><span class="line"></span><br><span class="line">#增 :添加文档,指定id</span><br><span class="line">PUT user4&#x2F;_doc&#x2F;1</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;:&quot;李四&quot;,</span><br><span class="line">  &quot;age&quot;:20</span><br><span class="line">&#125;</span><br><span class="line">#增 :没有id的情况下</span><br><span class="line">POST user4&#x2F;_doc&#x2F;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;:&quot;王五&quot;,</span><br><span class="line">  &quot;age&quot;:20</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#查询:文档</span><br><span class="line">GET user4&#x2F;_doc&#x2F;vphILnEBvHsdDKdoIrcc</span><br><span class="line"></span><br><span class="line">#查询:所有文档</span><br><span class="line">GET user4&#x2F;_search</span><br><span class="line"></span><br><span class="line">#修改:根据id修改</span><br><span class="line">POST user4&#x2F;_doc&#x2F;1</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;:&quot;李四111&quot;,</span><br><span class="line">  &quot;age&quot;:20,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#删除指定id文档</span><br><span class="line">DELETE user4&#x2F;_doc&#x2F;1</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="为什么使用es搜索-1"><a href="#为什么使用es搜索-1" class="headerlink" title="为什么使用es搜索"></a><strong>为什么使用es搜索</strong></h3><p>用数据库查询的不好之处</p>
+<p>1.跟数据库查询,如果数据量十分庞大,会消耗大量的时间,效率极低,给用户体验极差</p>
+<p>2.不能分词,关系型数据库提供的查询,功能太弱</p>
+<p>3.不能分库分表,当数据量过于庞大(大于1亿),分库分表需要借助在不程序实现。（mycat）</p>
+<h3 id="es的概述-1"><a href="#es的概述-1" class="headerlink" title="es的概述"></a><strong>es的概述</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">官网：https:&#x2F;&#x2F;www.elastic.co&#x2F;</span><br><span class="line"></span><br><span class="line">特点：</span><br><span class="line"></span><br><span class="line">- ElasticSearch是一个基于Lucene的搜索服务器 </span><br><span class="line">- 是一个分布式、高扩展、高实时的搜索与数据分析引擎 </span><br><span class="line">- 基于RESTful web接口 </span><br><span class="line">- Elasticsearch是用Java语言开发的，并作为Apache许可条款下的开放源码发布，是一种 流行的企业级搜索引擎 </span><br><span class="line"></span><br><span class="line">场景：</span><br><span class="line"></span><br><span class="line">- 搜索：海量数据的查询 </span><br><span class="line">- 日志数据分析 </span><br><span class="line">- 实时数据分析</span><br><span class="line"></span><br><span class="line">索引（index） </span><br><span class="line"></span><br><span class="line">ElasticSearch存储数据的地方，可以理解成关系型数据库中的数据库概念。 </span><br><span class="line"></span><br><span class="line">映射（mapping） </span><br><span class="line"></span><br><span class="line">mapping定义了每个字段的类型、字段所使用的分词器等。相当于关系型数据库中的表结构。 </span><br><span class="line"></span><br><span class="line">文档（document） </span><br><span class="line"></span><br><span class="line">Elasticsearch中的最小数据单元，常以json格式显示。一个document相当于关系型数据库中的一行数据。 </span><br><span class="line"></span><br><span class="line">倒排索引 </span><br><span class="line"></span><br><span class="line">一个倒排索引由文档中所有不重复词的列表构成，对于其中每个词，对应一个包含它的文档id列表。 </span><br><span class="line"></span><br><span class="line">类型（type） _doc</span><br></pre></td></tr></table></figure>
+
+<h2 id="操作es-restful风格-1"><a href="#操作es-restful风格-1" class="headerlink" title="操作es restful风格"></a>操作es restful风格</h2><p>REST（Representational State Transfer），表述性状态转移，是一组架构约束条件和原则。满足这些约束条件和 原则的应用程序或设计就是RESTful。就是一种定义接口的规范。 </p>
+<ul>
+<li><p>基于HTTP。 </p>
+</li>
+<li><p>可以使用XML格式定义或JSON格式定义。 </p>
+</li>
+<li><p>每一个URI代表1种资源。 </p>
+</li>
+<li><p>客户端使用GET、POST、PUT、DELETE 4个表示操作方式的动词对服务端资源进行操作： </p>
+<p>GET：用来获取资源  </p>
+<p>POST：用来新建资源（也可以用于更新资源） </p>
+<p>PUT：用来更新资源 </p>
+<p>DELETE：用来删除资源</p>
+</li>
+</ul>
+<h2 id="操作es-索引-建表-index-1"><a href="#操作es-索引-建表-index-1" class="headerlink" title="操作es 索引 (建表) index"></a>操作es 索引 (建表) index</h2><p>使用postman测试：</p>
+<p>添加索引 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PUT http:&#x2F;&#x2F;ip:端口&#x2F;索引名称</span><br></pre></td></tr></table></figure>
+
+<p>查询索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GET http:&#x2F;&#x2F;ip:端口&#x2F;索引名称</span><br><span class="line">GET http:&#x2F;&#x2F;ip:端口&#x2F;索引名称1,索引名称2</span><br><span class="line">GET http:&#x2F;&#x2F;ip:端口&#x2F;_all</span><br></pre></td></tr></table></figure>
+
+<p>删除索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE http:&#x2F;&#x2F;ip:端口&#x2F;索引名称</span><br></pre></td></tr></table></figure>
+
+<p>关闭索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST http:&#x2F;&#x2F;ip:端口&#x2F;索引名称&#x2F;_close</span><br></pre></td></tr></table></figure>
+
+<p>打开索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST http:&#x2F;&#x2F;ip:端口&#x2F;索引名称&#x2F;_open</span><br></pre></td></tr></table></figure>
+
+<h2 id="操作es-映射-数据类型-1"><a href="#操作es-映射-数据类型-1" class="headerlink" title="操作es 映射 数据类型"></a>操作es 映射 数据类型</h2><h3 id="1简单数据类型-1"><a href="#1简单数据类型-1" class="headerlink" title=".1简单数据类型"></a>.1简单数据类型</h3><ul>
+<li><p>字符串</p>
+<p>text：会分词，不支持聚合</p>
+<p>select color,count(1) from pruduct group by color.   1 藏青色 2斩男色 </p>
+<p>keyword：不会分词，将全部内容作为一个词条，支持聚合。邮编030600，身份证号1424123112131311，特有名词：大文娱</p>
+</li>
+<li><p>数值</p>
+<p>age byte </p>
+</li>
+</ul>
+<h2 id="操作es-文档-1"><a href="#操作es-文档-1" class="headerlink" title="操作es 文档"></a>操作es 文档</h2><ul>
+<li><p>添加文档，指定id</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">PUT &#x2F;person&#x2F;_doc&#x2F;1</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot; :&quot;李四&quot;,</span><br><span class="line">  &quot;age&quot; : 20,</span><br><span class="line">  &quot;address&quot; :&quot;太原&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加文档，不指定id</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">POST &#x2F;person&#x2F;_doc&#x2F;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot; :&quot;王五&quot;,</span><br><span class="line">  &quot;age&quot; : 20,</span><br><span class="line">  &quot;address&quot; :&quot;武汉&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询指定id的文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;person&#x2F;_doc&#x2F;1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">PUT &#x2F;person&#x2F;_doc&#x2F;1</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot; :&quot;李四&quot;,</span><br><span class="line">  &quot;age&quot; : 21,</span><br><span class="line">  &quot;address&quot; :&quot;太原&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询所有文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;person&#x2F;_search</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除指定id文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE &#x2F;person&#x2F;_doc&#x2F;1</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="IK分词器-1"><a href="#IK分词器-1" class="headerlink" title="IK分词器"></a>IK分词器</h1><h2 id="视频14-分词器-介绍-1"><a href="#视频14-分词器-介绍-1" class="headerlink" title="视频14 分词器 介绍"></a>视频14 分词器 介绍</h2><p>1、分词器（Analyzer）：将一段文本，按照一定逻辑，分析成多个词语的一种工具</p>
+<p>2、ElasticSearch内置分词器：</p>
+<ul>
+<li>Standard Analyzer -默认分词器，按词切分，小写处理</li>
+<li>Simple Analyzer -按照非字母切分(符号被过滤),小写处理</li>
+<li>Stop Analyzer -小写处理，停用词过滤(the,a,is)</li>
+<li>Whitespace Analyzer -按照空格切分，不转小写</li>
+<li>Keyword Analyzer -不分词，直接将输入当作输出</li>
+<li>Patter Analyzer -正则表达式，默认\W+(非字符分割)</li>
+<li>Language -提供了30多种常见语言的分词器</li>
+</ul>
+<p>3、ElasticSearch内置分词器对中文很不友好，处理方式为：一个字一个词</p>
+<p>测试：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET _analyze</span><br><span class="line">&#123;</span><br><span class="line">  &quot;analyzer&quot;: &quot;standard&quot;,</span><br><span class="line">  &quot;text&quot;: [&quot;我爱北京天安门&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="ik分词器使用-1"><a href="#ik分词器使用-1" class="headerlink" title="ik分词器使用"></a>ik分词器使用</h2><h3 id="ik-max-word-1"><a href="#ik-max-word-1" class="headerlink" title="ik_max_word"></a><strong>ik_max_word</strong></h3><p>会将文本做最细粒度的拆分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;_analyze</span><br><span class="line">&#123;</span><br><span class="line">  &quot;analyzer&quot;: &quot;ik_max_word&quot;,</span><br><span class="line">  &quot;text&quot;: &quot;乒乓球明年总冠军&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ik-smart-1"><a href="#ik-smart-1" class="headerlink" title="ik_smart"></a><strong>ik_smart</strong></h3><p>会做最粗粒度的拆分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;_analyze</span><br><span class="line">&#123;</span><br><span class="line">  &quot;analyzer&quot;: &quot;ik_smart&quot;,</span><br><span class="line">  &quot;text&quot;: &quot;乒乓球明年总冠军&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">这里会拆分成:乒乓球    明年    总冠军</span><br></pre></td></tr></table></figure>
+
+<h3 id="全文查询-meach-1"><a href="#全文查询-meach-1" class="headerlink" title="全文查询  meach"></a>全文查询  meach</h3><p>不能删除映射,只能删除索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">#添加映射</span><br><span class="line">PUT &#x2F;user1&#x2F;_mapping</span><br><span class="line">&#123;</span><br><span class="line">  poperties:&#123;</span><br><span class="line">    name:&#123;</span><br><span class="line">      type:&quot;text&quot;</span><br><span class="line">     &#125;,</span><br><span class="line">     age:&#123;</span><br><span class="line">       type:&quot;interger&quot;</span><br><span class="line">     &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#添加索引</span><br><span class="line">PUT user4</span><br><span class="line">&#123;</span><br><span class="line">  &quot;mappings&quot;: &#123;</span><br><span class="line">    &quot;properties&quot;: &#123;</span><br><span class="line">      &quot;name&quot;:&#123;</span><br><span class="line">        &quot;type&quot;: &quot;text&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &quot;age&quot;:&#123;</span><br><span class="line">        &quot;type&quot;: &quot;integer&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">GET user4&#x2F;_mapping</span><br><span class="line"></span><br><span class="line">#修改mapping</span><br><span class="line">PUT &#x2F;user4&#x2F;_mapping</span><br><span class="line">&#123;</span><br><span class="line">  &quot;properties&quot;:&#123;</span><br><span class="line">    &quot;gender&quot;:&#123;</span><br><span class="line">      &quot;type&quot; : &quot;text&quot;</span><br><span class="line">     &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">#不能删除映射 可以删除索引</span><br></pre></td></tr></table></figure>
+
+<h3 id="索引的增删改查-1"><a href="#索引的增删改查-1" class="headerlink" title="索引的增删改查"></a><strong>索引的增删改查</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">#查询索引</span><br><span class="line">GET user4</span><br><span class="line"></span><br><span class="line">#增 :添加文档,指定id</span><br><span class="line">PUT user4&#x2F;_doc&#x2F;1</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;:&quot;李四&quot;,</span><br><span class="line">  &quot;age&quot;:20</span><br><span class="line">&#125;</span><br><span class="line">#增 :没有id的情况下</span><br><span class="line">POST user4&#x2F;_doc&#x2F;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;:&quot;王五&quot;,</span><br><span class="line">  &quot;age&quot;:20</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#查询:文档</span><br><span class="line">GET user4&#x2F;_doc&#x2F;vphILnEBvHsdDKdoIrcc</span><br><span class="line"></span><br><span class="line">#查询:所有文档</span><br><span class="line">GET user4&#x2F;_search</span><br><span class="line"></span><br><span class="line">#修改:根据id修改</span><br><span class="line">POST user4&#x2F;_doc&#x2F;1</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;:&quot;李四111&quot;,</span><br><span class="line">  &quot;age&quot;:20,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#删除指定id文档</span><br><span class="line">DELETE user4&#x2F;_doc&#x2F;1</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5C86176%5CAppData%5CLocal%5CTemp%5C1585617510774.png" alt="1585617510774"></p>
+<h3 id="bulk"><a href="#bulk" class="headerlink" title="bulk_"></a>bulk_</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Bulk 批量操作是将文档的增删改查一些列操作，通过一次请求全都做完。减少网络传输次数。</span><br><span class="line"></span><br><span class="line">语法：</span><br><span class="line">POST /_bulk</span><br><span class="line">&#123;<span class="string">"action"</span>:&#123;<span class="string">"metadata"</span>&#125;&#125;</span><br><span class="line">&#123;<span class="string">"data"</span>&#125;</span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line">POST _bulk</span><br><span class="line"><span class="comment">//删除person里面id为4的</span></span><br><span class="line">&#123;<span class="string">"delete"</span>:&#123;<span class="string">"_index"</span>:<span class="string">"person"</span>,<span class="string">"id"</span>:<span class="number">4</span>&#125;&#125;</span><br><span class="line"><span class="comment">//在person里面创建id5的</span></span><br><span class="line">&#123;<span class="string">"create"</span>:&#123;<span class="string">"_index"</span>:<span class="string">"person"</span>,<span class="string">"id"</span>:<span class="number">5</span>&#125;&#125;</span><br><span class="line">&#123;<span class="string">"name"</span>:<span class="string">"王五"</span>,<span class="string">"age"</span>:<span class="number">5</span>,<span class="string">"address"</span> : <span class="string">"山西大同"</span>&#125;</span><br><span class="line"><span class="comment">//修改id为2的数据</span></span><br><span class="line">&#123;<span class="string">"update"</span>:&#123;<span class="string">"_index"</span>:<span class="string">"person"</span>,<span class="string">"id"</span>:<span class="number">2</span>&#125;&#125;</span><br><span class="line">&#123;<span class="string">"doc"</span>:&#123;<span class="string">"name"</span>:<span class="string">"王五儿"</span>&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="bulk的javaIPA"><a href="#bulk的javaIPA" class="headerlink" title="bulk的javaIPA"></a>bulk的javaIPA</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 批量操作 bulk</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IOException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testBulk</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">// POST _bulk</span></span><br><span class="line">        <span class="comment">// &#123;"delete":&#123;"_index":"person","_id":4&#125;&#125;</span></span><br><span class="line">        <span class="comment">// &#123;"create":&#123;"_index":"person","_id":8&#125;&#125;</span></span><br><span class="line">        <span class="comment">// &#123;"name" : "李四8","age" : 44,"address" : "北京海淀"&#125;</span></span><br><span class="line">        <span class="comment">// &#123;"update":&#123;"_index":"person","_id":2&#125;&#125;</span></span><br><span class="line">        <span class="comment">// &#123;"doc":&#123;"name" : "李四儿"&#125;&#125;</span></span><br><span class="line">  <span class="comment">//1创建请求</span></span><br><span class="line">        BulkRequest bulkRequest=<span class="keyword">new</span> BulkRequest();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//删除</span></span><br><span class="line">        DeleteRequest deleteRequest=<span class="keyword">new</span> DeleteRequest(<span class="string">"person"</span>,<span class="string">"4"</span>);</span><br><span class="line">        bulkRequest.add(deleteRequest);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 添加</span></span><br><span class="line">        IndexRequest indexRequest = <span class="keyword">new</span> IndexRequest(<span class="string">"person"</span>).type(<span class="string">"_doc"</span>).id(<span class="string">"8"</span>);</span><br><span class="line">        Map&lt;String, Object&gt; sourceMap = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        sourceMap.put(<span class="string">"name"</span>, <span class="string">"李四4"</span>);</span><br><span class="line">        sourceMap.put(<span class="string">"age"</span>, <span class="number">44</span>);</span><br><span class="line">        sourceMap.put(<span class="string">"address"</span>, <span class="string">"北京海淀"</span>);</span><br><span class="line">        indexRequest.source(sourceMap);</span><br><span class="line">        bulkRequest.add(indexRequest);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 修改</span></span><br><span class="line">        Map&lt;String, Object&gt; sourceMap2 = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        sourceMap2.put(<span class="string">"name"</span>, <span class="string">"李四4"</span>);</span><br><span class="line">        UpdateRequest updateRequest=<span class="keyword">new</span> UpdateRequest(<span class="string">"person"</span>,<span class="string">"2"</span>);</span><br><span class="line">        updateRequest.doc(sourceMap2);</span><br><span class="line">        bulkRequest.add(updateRequest);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//2执行操作</span></span><br><span class="line">        BulkResponse bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//3获取结果</span></span><br><span class="line">        RestStatus status = bulkResponse.status();</span><br><span class="line">        System.out.println(status);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="1-将数据库的数据导入es中"><a href="#1-将数据库的数据导入es中" class="headerlink" title="1.将数据库的数据导入es中"></a>1.<strong>将数据库的数据导入es中</strong></h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">例子：将数据库的goods表数据导入到ElasticSearch(es)中	</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>.实现步骤</span><br><span class="line">(<span class="number">1</span>)创建goods索引</span><br><span class="line">(<span class="number">2</span>)查询Goods表数据</span><br><span class="line">(<span class="number">3</span>)批量添加到(ElasticSearch)es中</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-1准备工作"><a href="#1-1准备工作" class="headerlink" title="1.1准备工作"></a>1.1<strong>准备工作</strong></h2><p>1.MySql导入数据，模拟业务逻辑<br>2.es创建索引</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">es创建索引：</span><br><span class="line">	PUT goods</span><br><span class="line">&#123;</span><br><span class="line">	<span class="string">"mappings"</span>: &#123;</span><br><span class="line">		<span class="string">"properties"</span>: &#123;</span><br><span class="line">			<span class="string">"title"</span>: &#123;</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"text"</span>,</span><br><span class="line">				<span class="string">"analyzer"</span>: <span class="string">"ik_smart"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"price"</span>: &#123; </span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"double"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"createTime"</span>: &#123;</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"date"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"categoryName"</span>: &#123;	</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"keyword"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"brandName"</span>: &#123;	</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"keyword"</span></span><br><span class="line">			&#125;,</span><br><span class="line">	</span><br><span class="line">			<span class="string">"spec"</span>: &#123;		</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"object"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"saleNum"</span>: &#123;	</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"integer"</span></span><br><span class="line">			&#125;,			</span><br><span class="line">			<span class="string">"stock"</span>: &#123;	</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"integer"</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>title：商品的标题</p>
+<p>price：商品的价格</p>
+<p>GreateTime：创建的时间</p>
+<p>categoryName：分类的名称。如：家电，电脑</p>
+<p>brankName：品牌名称。如：华为，小米</p>
+<p>spec：商品规格。如：spec：{“屏幕尺寸”,”72寸”,”内存大小”,”128G”}</p>
+<p>saleName：销量</p>
+<p>stock：库存量</p>
+<h2 id="1-2添加一条测试数据"><a href="#1-2添加一条测试数据" class="headerlink" title="1.2添加一条测试数据"></a>1.2添加一条测试数据</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">POST goods/_doc/<span class="number">1</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">"title"</span>:<span class="string">"小米手机"</span>,</span><br><span class="line">  <span class="string">"price"</span>:<span class="number">1000</span>,</span><br><span class="line">  <span class="string">"createTime"</span>:<span class="string">"2019-12-01"</span>,</span><br><span class="line">  <span class="string">"categoryName"</span>:<span class="string">"手机"</span>,</span><br><span class="line">  <span class="string">"brandName"</span>:<span class="string">"小米"</span>,</span><br><span class="line">  <span class="string">"saleNum"</span>:<span class="number">3000</span>,</span><br><span class="line">  <span class="string">"stock"</span>:<span class="number">10000</span>,</span><br><span class="line">  <span class="string">"spec"</span>:&#123;</span><br><span class="line">    <span class="string">"网络制式"</span>:<span class="string">"移动4G"</span>,</span><br><span class="line">    <span class="string">"屏幕尺寸"</span>:<span class="string">"4.5"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-3导入依赖-编写java代码"><a href="#1-3导入依赖-编写java代码" class="headerlink" title="1.3导入依赖  编写java代码"></a>1.3导入依赖  编写java代码</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--mybatis--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis.spring.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--mysql驱动--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-4配置文件添加配置"><a href="#1-4配置文件添加配置" class="headerlink" title="1.4配置文件添加配置"></a>1.4配置文件添加配置</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># datasource</span><br><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql:///es?serverTimezone=UTC</span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line"># mybatis</span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper/*Mapper.xml # mapper映射文件路径</span><br><span class="line">  type-aliases-package: com.itheima.es.domain</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-5创建实体类"><a href="#1-5创建实体类" class="headerlink" title="1.5创建实体类"></a>1.5创建实体类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Goods</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String title;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> price;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> stock;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> saleNum;</span><br><span class="line">    <span class="keyword">private</span> Date createTime;</span><br><span class="line">    <span class="keyword">private</span> String categoryName;</span><br><span class="line">    <span class="keyword">private</span> String brandName;</span><br><span class="line">    <span class="keyword">private</span> Map spec;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@JSONField</span>(serialize = <span class="keyword">false</span>)<span class="comment">//在转换JSON时，忽略该字段</span></span><br><span class="line">    <span class="keyword">private</span> String specStr;<span class="comment">//接收数据库的信息 "&#123;&#125;"</span></span><br><span class="line">    </span><br><span class="line">    getter and setter....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-6创建mapper接口"><a href="#1-6创建mapper接口" class="headerlink" title="1.6创建mapper接口"></a>1.6创建mapper接口</h2><p>在java目录下</p>
+<p>@mapper    将实现类交给spring管理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@Repository</span><br><span class="line">@Mapper  </span><br><span class="line">public interface GoodsMapper &#123;</span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 查询所有商品</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public List&lt;Goods&gt; findAll();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-7在resources下创建xml文件并且配置"><a href="#1-7在resources下创建xml文件并且配置" class="headerlink" title="1.7在resources下创建xml文件并且配置"></a>1.7<strong>在resources下创建xml文件并且配置</strong></h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">mapper</span> <span class="meta-keyword">PUBLIC</span> <span class="meta-string">"-//mybatis.org//DTD Mapper 3.0//EN"</span> <span class="meta-string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">"com.itheima.es.mapper.GoodsMapper"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"findAll"</span> <span class="attr">resultType</span>=<span class="string">"goods"</span>&gt;</span></span><br><span class="line">        select</span><br><span class="line">              `id`         ,</span><br><span class="line">              `title`       ,</span><br><span class="line">              `price`       ,</span><br><span class="line">              `stock`       ,</span><br><span class="line">              `saleNum`     ,</span><br><span class="line">              `createTime`  ,</span><br><span class="line">              `categoryName`,</span><br><span class="line">              `brandName`   ,</span><br><span class="line">              `spec`  as specStr</span><br><span class="line">         from goods</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-8编写测试类并测试"><a href="#1-8编写测试类并测试" class="headerlink" title="1.8编写测试类并测试"></a><strong>1.8编写测试类并测试</strong></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">@Test</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">importData</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">     <span class="comment">//1查询所有商品</span></span><br><span class="line">     List&lt;Goods&gt; all = goodsMapper.findAll();</span><br><span class="line">     <span class="comment">// System.out.println(all.size());</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">     <span class="comment">//2bulk导入es</span></span><br><span class="line">     </span><br><span class="line">     <span class="comment">//2.1创建请求</span></span><br><span class="line">     BulkRequest bulkRequest=<span class="keyword">new</span> BulkRequest();</span><br><span class="line">     <span class="comment">//便利从数据库拿出来的每一条数据</span></span><br><span class="line">     <span class="keyword">for</span> (Goods goods : all) &#123;</span><br><span class="line">         <span class="comment">//将spec转换</span></span><br><span class="line">         goods.setSpec(JSON.parseObject(goods.getSpecStr(),Map<span class="class">.<span class="keyword">class</span>))</span>;</span><br><span class="line"></span><br><span class="line">         <span class="comment">// 添加一个叫goods的文档  并且将id转换为字符串格式</span></span><br><span class="line">         IndexRequest indexRequest = <span class="keyword">new</span> IndexRequest(<span class="string">"goods"</span>).type(<span class="string">"_doc"</span>).id(goods.getId()+<span class="string">""</span>);</span><br><span class="line"><span class="comment">//拿取到goods中的数据</span></span><br><span class="line">         indexRequest.source(JSON.toJSONString(goods),XContentType.JSON);</span><br><span class="line">         <span class="comment">//把获取到的数据添加到请求里</span></span><br><span class="line">         bulkRequest.add(indexRequest);</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="comment">//2.2执行操作</span></span><br><span class="line">     BulkResponse bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);</span><br><span class="line"></span><br><span class="line">     <span class="comment">//2.3获取结果</span></span><br><span class="line">     RestStatus status = bulkResponse.status();</span><br><span class="line">     System.out.println(status);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="es搜索单词"><a href="#es搜索单词" class="headerlink" title="es搜索单词"></a>es搜索单词</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search   搜索  在es文档中代表可以查询所有 例:GET 文档吗 _search</span><br><span class="line"></span><br><span class="line">ik_max_word  在es会最细拆分粒度</span><br><span class="line"></span><br><span class="line">ik_smart     在es中会最粗粒度拆分</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="bulk-1"><a href="#bulk-1" class="headerlink" title="bulk_"></a>bulk_</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Bulk 批量操作是将文档的增删改查一些列操作，通过一次请求全都做完。减少网络传输次数。</span><br><span class="line"></span><br><span class="line">语法：</span><br><span class="line">POST /_bulk</span><br><span class="line">&#123;<span class="string">"action"</span>:&#123;<span class="string">"metadata"</span>&#125;&#125;</span><br><span class="line">&#123;<span class="string">"data"</span>&#125;</span><br><span class="line"></span><br><span class="line">示例：</span><br><span class="line">POST _bulk</span><br><span class="line"><span class="comment">//删除person里面id为4的</span></span><br><span class="line">&#123;<span class="string">"delete"</span>:&#123;<span class="string">"_index"</span>:<span class="string">"person"</span>,<span class="string">"id"</span>:<span class="number">4</span>&#125;&#125;</span><br><span class="line"><span class="comment">//在person里面创建id5的</span></span><br><span class="line">&#123;<span class="string">"create"</span>:&#123;<span class="string">"_index"</span>:<span class="string">"person"</span>,<span class="string">"id"</span>:<span class="number">5</span>&#125;&#125;</span><br><span class="line">&#123;<span class="string">"name"</span>:<span class="string">"王五"</span>,<span class="string">"age"</span>:<span class="number">5</span>,<span class="string">"address"</span> : <span class="string">"山西大同"</span>&#125;</span><br><span class="line"><span class="comment">//修改id为2的数据</span></span><br><span class="line">&#123;<span class="string">"update"</span>:&#123;<span class="string">"_index"</span>:<span class="string">"person"</span>,<span class="string">"id"</span>:<span class="number">2</span>&#125;&#125;</span><br><span class="line">&#123;<span class="string">"doc"</span>:&#123;<span class="string">"name"</span>:<span class="string">"王五儿"</span>&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="bulk的javaIPA-1"><a href="#bulk的javaIPA-1" class="headerlink" title="bulk的javaIPA"></a>bulk的javaIPA</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 批量操作 bulk</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IOException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testBulk</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">// POST _bulk</span></span><br><span class="line">        <span class="comment">// &#123;"delete":&#123;"_index":"person","_id":4&#125;&#125;</span></span><br><span class="line">        <span class="comment">// &#123;"create":&#123;"_index":"person","_id":8&#125;&#125;</span></span><br><span class="line">        <span class="comment">// &#123;"name" : "李四8","age" : 44,"address" : "北京海淀"&#125;</span></span><br><span class="line">        <span class="comment">// &#123;"update":&#123;"_index":"person","_id":2&#125;&#125;</span></span><br><span class="line">        <span class="comment">// &#123;"doc":&#123;"name" : "李四儿"&#125;&#125;</span></span><br><span class="line">  <span class="comment">//1创建请求</span></span><br><span class="line">        BulkRequest bulkRequest=<span class="keyword">new</span> BulkRequest();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//删除</span></span><br><span class="line">        DeleteRequest deleteRequest=<span class="keyword">new</span> DeleteRequest(<span class="string">"person"</span>,<span class="string">"4"</span>);</span><br><span class="line">        bulkRequest.add(deleteRequest);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 添加</span></span><br><span class="line">        IndexRequest indexRequest = <span class="keyword">new</span> IndexRequest(<span class="string">"person"</span>).type(<span class="string">"_doc"</span>).id(<span class="string">"8"</span>);</span><br><span class="line">        Map&lt;String, Object&gt; sourceMap = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        sourceMap.put(<span class="string">"name"</span>, <span class="string">"李四4"</span>);</span><br><span class="line">        sourceMap.put(<span class="string">"age"</span>, <span class="number">44</span>);</span><br><span class="line">        sourceMap.put(<span class="string">"address"</span>, <span class="string">"北京海淀"</span>);</span><br><span class="line">        indexRequest.source(sourceMap);</span><br><span class="line">        bulkRequest.add(indexRequest);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 修改</span></span><br><span class="line">        Map&lt;String, Object&gt; sourceMap2 = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        sourceMap2.put(<span class="string">"name"</span>, <span class="string">"李四4"</span>);</span><br><span class="line">        UpdateRequest updateRequest=<span class="keyword">new</span> UpdateRequest(<span class="string">"person"</span>,<span class="string">"2"</span>);</span><br><span class="line">        updateRequest.doc(sourceMap2);</span><br><span class="line">        bulkRequest.add(updateRequest);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//2执行操作</span></span><br><span class="line">        BulkResponse bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//3获取结果</span></span><br><span class="line">        RestStatus status = bulkResponse.status();</span><br><span class="line">        System.out.println(status);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="1-将数据库的数据导入es中-1"><a href="#1-将数据库的数据导入es中-1" class="headerlink" title="1.将数据库的数据导入es中"></a>1.<strong>将数据库的数据导入es中</strong></h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">例子：将数据库的goods表数据导入到ElasticSearch(es)中	</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>.实现步骤</span><br><span class="line">(<span class="number">1</span>)创建goods索引</span><br><span class="line">(<span class="number">2</span>)查询Goods表数据</span><br><span class="line">(<span class="number">3</span>)批量添加到(ElasticSearch)es中</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-1准备工作-1"><a href="#1-1准备工作-1" class="headerlink" title="1.1准备工作"></a>1.1<strong>准备工作</strong></h2><p>1.MySql导入数据，模拟业务逻辑<br>2.es创建索引</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">es创建索引：</span><br><span class="line">	PUT goods</span><br><span class="line">&#123;</span><br><span class="line">	<span class="string">"mappings"</span>: &#123;</span><br><span class="line">		<span class="string">"properties"</span>: &#123;</span><br><span class="line">			<span class="string">"title"</span>: &#123;</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"text"</span>,</span><br><span class="line">				<span class="string">"analyzer"</span>: <span class="string">"ik_smart"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"price"</span>: &#123; </span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"double"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"createTime"</span>: &#123;</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"date"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"categoryName"</span>: &#123;	</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"keyword"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"brandName"</span>: &#123;	</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"keyword"</span></span><br><span class="line">			&#125;,</span><br><span class="line">	</span><br><span class="line">			<span class="string">"spec"</span>: &#123;		</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"object"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="string">"saleNum"</span>: &#123;	</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"integer"</span></span><br><span class="line">			&#125;,			</span><br><span class="line">			<span class="string">"stock"</span>: &#123;	</span><br><span class="line">				<span class="string">"type"</span>: <span class="string">"integer"</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>title：商品的标题</p>
+<p>price：商品的价格</p>
+<p>GreateTime：创建的时间</p>
+<p>categoryName：分类的名称。如：家电，电脑</p>
+<p>brankName：品牌名称。如：华为，小米</p>
+<p>spec：商品规格。如：spec：{“屏幕尺寸”,”72寸”,”内存大小”,”128G”}</p>
+<p>saleName：销量</p>
+<p>stock：库存量</p>
+<h2 id="1-2添加一条测试数据-1"><a href="#1-2添加一条测试数据-1" class="headerlink" title="1.2添加一条测试数据"></a>1.2添加一条测试数据</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">POST goods/_doc/<span class="number">1</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">"title"</span>:<span class="string">"小米手机"</span>,</span><br><span class="line">  <span class="string">"price"</span>:<span class="number">1000</span>,</span><br><span class="line">  <span class="string">"createTime"</span>:<span class="string">"2019-12-01"</span>,</span><br><span class="line">  <span class="string">"categoryName"</span>:<span class="string">"手机"</span>,</span><br><span class="line">  <span class="string">"brandName"</span>:<span class="string">"小米"</span>,</span><br><span class="line">  <span class="string">"saleNum"</span>:<span class="number">3000</span>,</span><br><span class="line">  <span class="string">"stock"</span>:<span class="number">10000</span>,</span><br><span class="line">  <span class="string">"spec"</span>:&#123;</span><br><span class="line">    <span class="string">"网络制式"</span>:<span class="string">"移动4G"</span>,</span><br><span class="line">    <span class="string">"屏幕尺寸"</span>:<span class="string">"4.5"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-3导入依赖-编写java代码-1"><a href="#1-3导入依赖-编写java代码-1" class="headerlink" title="1.3导入依赖  编写java代码"></a>1.3导入依赖  编写java代码</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--mybatis--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis.spring.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--mysql驱动--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-4配置文件添加配置-1"><a href="#1-4配置文件添加配置-1" class="headerlink" title="1.4配置文件添加配置"></a>1.4配置文件添加配置</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># datasource</span><br><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql:///es?serverTimezone=UTC</span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line"># mybatis</span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper/*Mapper.xml # mapper映射文件路径</span><br><span class="line">  type-aliases-package: com.itheima.es.domain</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-5创建实体类-1"><a href="#1-5创建实体类-1" class="headerlink" title="1.5创建实体类"></a>1.5创建实体类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Goods</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String title;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> price;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> stock;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> saleNum;</span><br><span class="line">    <span class="keyword">private</span> Date createTime;</span><br><span class="line">    <span class="keyword">private</span> String categoryName;</span><br><span class="line">    <span class="keyword">private</span> String brandName;</span><br><span class="line">    <span class="keyword">private</span> Map spec;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@JSONField</span>(serialize = <span class="keyword">false</span>)<span class="comment">//在转换JSON时，忽略该字段</span></span><br><span class="line">    <span class="keyword">private</span> String specStr;<span class="comment">//接收数据库的信息 "&#123;&#125;"</span></span><br><span class="line">    </span><br><span class="line">    getter and setter....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-6创建mapper接口-1"><a href="#1-6创建mapper接口-1" class="headerlink" title="1.6创建mapper接口"></a>1.6创建mapper接口</h2><p>在java目录下</p>
+<p>@mapper    将实现类交给spring管理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@Repository</span><br><span class="line">@Mapper  </span><br><span class="line">public interface GoodsMapper &#123;</span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 查询所有商品</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public List&lt;Goods&gt; findAll();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-7在resources下创建xml文件并且配置-1"><a href="#1-7在resources下创建xml文件并且配置-1" class="headerlink" title="1.7在resources下创建xml文件并且配置"></a>1.7<strong>在resources下创建xml文件并且配置</strong></h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">mapper</span> <span class="meta-keyword">PUBLIC</span> <span class="meta-string">"-//mybatis.org//DTD Mapper 3.0//EN"</span> <span class="meta-string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">"com.itheima.es.mapper.GoodsMapper"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"findAll"</span> <span class="attr">resultType</span>=<span class="string">"goods"</span>&gt;</span></span><br><span class="line">        select</span><br><span class="line">              `id`         ,</span><br><span class="line">              `title`       ,</span><br><span class="line">              `price`       ,</span><br><span class="line">              `stock`       ,</span><br><span class="line">              `saleNum`     ,</span><br><span class="line">              `createTime`  ,</span><br><span class="line">              `categoryName`,</span><br><span class="line">              `brandName`   ,</span><br><span class="line">              `spec`  as specStr</span><br><span class="line">         from goods</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-8编写测试类并测试-1"><a href="#1-8编写测试类并测试-1" class="headerlink" title="1.8编写测试类并测试"></a><strong>1.8编写测试类并测试</strong></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">@Test</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">importData</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">     <span class="comment">//1查询所有商品</span></span><br><span class="line">     List&lt;Goods&gt; all = goodsMapper.findAll();</span><br><span class="line">     <span class="comment">// System.out.println(all.size());</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">     <span class="comment">//2bulk导入es</span></span><br><span class="line">     </span><br><span class="line">     <span class="comment">//2.1创建请求</span></span><br><span class="line">     BulkRequest bulkRequest=<span class="keyword">new</span> BulkRequest();</span><br><span class="line">     <span class="comment">//便利从数据库拿出来的每一条数据</span></span><br><span class="line">     <span class="keyword">for</span> (Goods goods : all) &#123;</span><br><span class="line">         <span class="comment">//将spec转换</span></span><br><span class="line">         goods.setSpec(JSON.parseObject(goods.getSpecStr(),Map<span class="class">.<span class="keyword">class</span>))</span>;</span><br><span class="line"></span><br><span class="line">         <span class="comment">// 添加一个叫goods的文档  并且将id转换为字符串格式</span></span><br><span class="line">         IndexRequest indexRequest = <span class="keyword">new</span> IndexRequest(<span class="string">"goods"</span>).type(<span class="string">"_doc"</span>).id(goods.getId()+<span class="string">""</span>);</span><br><span class="line"><span class="comment">//拿取到goods中的数据</span></span><br><span class="line">         indexRequest.source(JSON.toJSONString(goods),XContentType.JSON);</span><br><span class="line">         <span class="comment">//把获取到的数据添加到请求里</span></span><br><span class="line">         bulkRequest.add(indexRequest);</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="comment">//2.2执行操作</span></span><br><span class="line">     BulkResponse bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);</span><br><span class="line"></span><br><span class="line">     <span class="comment">//2.3获取结果</span></span><br><span class="line">     RestStatus status = bulkResponse.status();</span><br><span class="line">     System.out.println(status);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="es搜索单词-1"><a href="#es搜索单词-1" class="headerlink" title="es搜索单词"></a>es搜索单词</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search   搜索  在es文档中代表可以查询所有 例:GET 文档吗 _search</span><br><span class="line"></span><br><span class="line">ik_max_word  在es会最细拆分粒度</span><br><span class="line"></span><br><span class="line">ik_smart     在es中会最粗粒度拆分</span><br></pre></td></tr></table></figure>
+
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://tongweiwei14.gitee.io/2020/04/08/es%E6%90%9C%E7%B4%A2/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://tongweiwei14.gitee.io/2020/04/08/es%E6%90%9C%E7%B4%A2/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " target="_blank" rel="noopener" style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

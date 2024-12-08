@@ -1,0 +1,1921 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 4.2.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/">个人笔记</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/miccall" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/post_img/me6.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >zookeeper扩展</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="今日重点"><a href="#今日重点" class="headerlink" title="今日重点"></a>今日重点</h1><ol>
+<li>SOA架构和微服务架构的区别</li>
+<li><strong>Dubbo架构图会画</strong></li>
+<li><strong>Dubbo入门案例</strong></li>
+<li>Dubbo协议的使用场景</li>
+<li>启动时检查</li>
+<li>负载均衡策略</li>
+<li><strong>解决Dubbo无法发布被事务代理的Service问题</strong></li>
+</ol>
+<h1 id="架构相关"><a href="#架构相关" class="headerlink" title="架构相关"></a>架构相关</h1><h4 id="SOA-和微服务的区别"><a href="#SOA-和微服务的区别" class="headerlink" title="SOA 和微服务的区别"></a>SOA 和微服务的区别</h4><p>首先<strong>SOA</strong>和<strong>微服务架构</strong>一个层面的东西，而对于<strong>ESB</strong>和<strong>微服务网关</strong>是一个层面的东西，<strong>SOA</strong>谈的是架构风格和方法，微服务架构谈的是实现工具或组件。</p>
+<p> 1<strong>.SOA</strong>（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2<strong>.微服务架构（MicroServices）</strong>:其实和 SOA 架构类似,<strong>微服务是在 SOA 上做的升华</strong>，微服务架构强调的一个重点是“业务需要彻底的<strong>组件化和服务化</strong>”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<h4 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>SOA</strong>(Service-Oriented Architecture)，即面向服务的架构。</p>
+<p><strong>SOA</strong>是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。</p>
+<p><strong>SOA</strong>架构中有两个主要角色：服务提供者（Provider）和服务使用者（Consumer）</p>
+<p><strong>Dubbo是SOA的典型实现</strong></p>
+<p><strong>ESB</strong>全称为Enterprise Service Bus，即<strong>企业服务总线</strong></p>
+<p>1.<strong>ESB（企业服务总线）</strong>，简单 来说 ESB 就是一根管道，用来连接各个服务节点。为了集 成不同系统，不同协议的服务，ESB 做了消息的转化解释和路由工作，让不同的服务互联互通；</p>
+<p>2.<strong>API网关是一个服务器</strong>，是系统的唯一入口,API网关方式的核心要点是，所有的客户端和消费端都通过统一的网关接入微服务</p>
+<table>
+<thead>
+<tr>
+<th align="center">方向</th>
+<th align="center">SOA</th>
+<th align="center">微服务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">解耦</td>
+<td align="center">应用程序服务的可重用性的最大化（相对耦合）</td>
+<td align="center">专注于解耦</td>
+</tr>
+<tr>
+<td align="center">可重用性</td>
+<td align="center">专注于业务功能重用</td>
+<td align="center">更重视“上下文边界”的概念；<br />以最小的依赖关系将组件及其数据耦合为单个单元；<br />通俗的讲一个功能点只专注做一件事</td>
+</tr>
+<tr>
+<td align="center">通信</td>
+<td align="center">ESB（多种消息协议）</td>
+<td align="center">消息系统，轻量级协议，例如HTTP，REST</td>
+</tr>
+<tr>
+<td align="center">数据存储</td>
+<td align="center">SOA服务共享数据存储</td>
+<td align="center">每个微服务可以有一个独立的数据存储</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h1 id="今日重点-1"><a href="#今日重点-1" class="headerlink" title="今日重点"></a>今日重点</h1><ol>
+<li>SOA架构和微服务架构的区别</li>
+<li><strong>Dubbo架构图会画</strong></li>
+<li><strong>Dubbo入门案例</strong></li>
+<li>Dubbo协议的使用场景</li>
+<li>启动时检查</li>
+<li>负载均衡策略</li>
+<li><strong>解决Dubbo无法发布被事务代理的Service问题</strong></li>
+</ol>
+<h1 id="架构相关-1"><a href="#架构相关-1" class="headerlink" title="架构相关"></a>架构相关</h1><h4 id="SOA-和微服务的区别-1"><a href="#SOA-和微服务的区别-1" class="headerlink" title="SOA 和微服务的区别"></a>SOA 和微服务的区别</h4><p>首先<strong>SOA</strong>和<strong>微服务架构</strong>一个层面的东西，而对于<strong>ESB</strong>和<strong>微服务网关</strong>是一个层面的东西，<strong>SOA</strong>谈的是架构风格和方法，微服务架构谈的是实现工具或组件。</p>
+<p> 1<strong>.SOA</strong>（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2<strong>.微服务架构（MicroServices）</strong>:其实和 SOA 架构类似,<strong>微服务是在 SOA 上做的升华</strong>，微服务架构强调的一个重点是“业务需要彻底的<strong>组件化和服务化</strong>”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<h4 id="名词解释-1"><a href="#名词解释-1" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>SOA</strong>(Service-Oriented Architecture)，即面向服务的架构。</p>
+<p><strong>SOA</strong>是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。</p>
+<p><strong>SOA</strong>架构中有两个主要角色：服务提供者（Provider）和服务使用者（Consumer）</p>
+<p><strong>Dubbo是SOA的典型实现</strong></p>
+<p><strong>ESB</strong>全称为Enterprise Service Bus，即<strong>企业服务总线</strong></p>
+<p>1.<strong>ESB（企业服务总线）</strong>，简单 来说 ESB 就是一根管道，用来连接各个服务节点。为了集 成不同系统，不同协议的服务，ESB 做了消息的转化解释和路由工作，让不同的服务互联互通；</p>
+<p>2.<strong>API网关是一个服务器</strong>，是系统的唯一入口,API网关方式的核心要点是，所有的客户端和消费端都通过统一的网关接入微服务</p>
+<table>
+<thead>
+<tr>
+<th align="center">方向</th>
+<th align="center">SOA</th>
+<th align="center">微服务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">解耦</td>
+<td align="center">应用程序服务的可重用性的最大化（相对耦合）</td>
+<td align="center">专注于解耦</td>
+</tr>
+<tr>
+<td align="center">可重用性</td>
+<td align="center">专注于业务功能重用</td>
+<td align="center">更重视“上下文边界”的概念；<br />以最小的依赖关系将组件及其数据耦合为单个单元；<br />通俗的讲一个功能点只专注做一件事</td>
+</tr>
+<tr>
+<td align="center">通信</td>
+<td align="center">ESB（多种消息协议）</td>
+<td align="center">消息系统，轻量级协议，例如HTTP，REST</td>
+</tr>
+<tr>
+<td align="center">数据存储</td>
+<td align="center">SOA服务共享数据存储</td>
+<td align="center">每个微服务可以有一个独立的数据存储</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><img src="C:/Users/86176/Desktop/img/20171112211133030.png" alt="SOA vs. MicroServices架构对比"></p>
+<p>微服务架构：</p>
+<p>具体实现手段：1、分库分表</p>
+<p>2、统一的服务接口</p>
+<p>3、所有的微服务都是独立的Java进程跑在独立的虚拟机上</p>
+<h1 id="Dubbo"><a href="#Dubbo" class="headerlink" title="Dubbo"></a>Dubbo</h1><h4 id="Dubbo解决了什么问题"><a href="#Dubbo解决了什么问题" class="headerlink" title="Dubbo解决了什么问题"></a>Dubbo解决了什么问题</h4><ul>
+<li>透明化的远程方法调用，就像<strong>调用本地方法一样调用远程方法</strong>，只需简单配置，没有任何API侵入。</li>
+<li>软负载均衡及容错机制，可在内网替代硬件负载均衡器，降低成本，减少单点。</li>
+<li>服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。</li>
+</ul>
+<p><strong>RPC 主要解决了</strong>：<strong>让分布式或者微服务系统中不同服务之间的调用像本地调用一样简单。</strong></p>
+<h4 id="tar-zxvf"><a href="#tar-zxvf" class="headerlink" title="tar -zxvf"></a><strong>tar -zxvf</strong></h4><p> z：通过gzip支持压缩或解压缩。还有其他的压缩或解压缩方式，比如j表示bzip2的方式。</p>
+<p>x：解压缩。c是压缩。 </p>
+<p>v：在压缩或解压缩过程中显示正在处理的文件名</p>
+<p>f：f后面必须跟上要处理的文件名。也就是说你不能写成这样 tar -zxfv zhcon-0.2.5.tar.gz </p>
+<p>z代表gzip的压缩包；x代表解压；v代表显示过程信息；f代表后面接的是文件 .</p>
+<h4 id="Dubbo负载均衡"><a href="#Dubbo负载均衡" class="headerlink" title="Dubbo负载均衡"></a>Dubbo负载均衡</h4><p>RandomLoadBalance（<strong>随机</strong>）：loadbalance=” random”</p>
+<p>RoundRobinLoadBalance（<strong>加权轮循</strong>）：loadbalance=” roundrobin”</p>
+<p>LeastActiveLoadBalance（<strong>最少活跃数</strong>）：loadbalance=” leastactive”</p>
+<p><strong>相同活跃数的随机。使慢的提供者收到更少的</strong></p>
+<p>ConsistentHashLoadBalance（<strong>一致性Hash</strong>）:loadbalance=” consistenthash</p>
+<p>一致性Hash,相同参数的请求总是发到同一个提供者</p>
+<p>缺省只是对第一个参数Hash</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "random")//随机</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "roundrobin")//轮询</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "leastactive")//最少活跃数</span></span><br><span class="line"><span class="meta">@Service</span>(protocol = <span class="string">"dubbo"</span>,loadbalance = <span class="string">"consistenthash"</span>)<span class="comment">//一致性Hash</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>常见点击错误</p>
+<p>一定要点Auto-Import</p>
+<p><img src="C:/Users/86176/Desktop/img/1564996929550.png" alt="1564996929550"></p>
+<p>Dubbo协议</p>
+<table>
+<thead>
+<tr>
+<th>协议名称</th>
+<th>实现描述</th>
+<th>连接</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dubbo</td>
+<td>传输：mina、netty、grizzy  序列化：dubbo、hessian2、java、json</td>
+<td>dubbo缺省采用单一长连接和NIO异步通讯</td>
+<td>1.传入传出参数数据包较小  2.消费者 比提供者多  3.常规远程服务方法调用  4.不适合传送大数据量的服务，比如文件、传视频</td>
+</tr>
+<tr>
+<td>rmi</td>
+<td>传输：java  rmi  序列化：java 标准序列化</td>
+<td>连接个数：多连接  连接方式：短连接  传输协议：TCP/IP  传输方式：BIO</td>
+<td>1.常规RPC调用  2.与原RMI客户端互操作  3.可传文件  4.不支持防火墙穿透</td>
+</tr>
+<tr>
+<td>hessian</td>
+<td>传输：Serverlet容器  序列化：hessian二进制序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者比消费者多  2.可传文件  3.跨语言传输</td>
+</tr>
+<tr>
+<td>http</td>
+<td>传输：servlet容器  序列化：表单序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者多余消费者  2.数据包混合</td>
+</tr>
+<tr>
+<td>webservice</td>
+<td>传输：HTTP  序列化：SOAP文件序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.系统集成  2.跨语言调用</td>
+</tr>
+<tr>
+<td>thrift</td>
+<td>与thrift RPC实现集成，并在基础上修改了报文头</td>
+<td>长连接、NIO异步传输</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>BIO（同步阻塞式IO）是一个连接一个线程。</p>
+<p>NIO（同步非阻塞式IO）是一个请求一个线程。</p>
+<ul>
+<li>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</li>
+<li>NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，JDK1.4开始支持。</li>
+</ul>
+<h4 id="单机结构—–集群结构——分布式结构"><a href="#单机结构—–集群结构——分布式结构" class="headerlink" title="单机结构—–集群结构——分布式结构"></a><strong>单机结构—–集群结构——分布式结构</strong></h4><p><img src="C:/Users/86176/Desktop/img/v2-e628e972ac34b597ba2c1f7f0d326705_r.jpg" alt="preview"></p>
+<p><strong>分布式结构：</strong>按照业务功能，拆分成一个个独立的子系统，这些子系统能够独立运行在web容器中，它们之间通过RPC方式通信。</p>
+<p>集群和分布式，<br>●集群:很多“人”一起，干一样的事。一个业务模块，部署在多台服务器上。<br>●分布式:很多”人”一起，干不样的事。</p>
+<h4 id="RPC的调用原理"><a href="#RPC的调用原理" class="headerlink" title="RPC的调用原理"></a><strong>RPC的调用原理</strong></h4><p>​                                        <strong>client</strong>                                                                           <strong>Server</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1576834531069.png" alt="1576834531069"></p>
+<ol>
+<li>服务消费方（client）调用以本地调用方式调用服务；</li>
+<li>client stub接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；</li>
+<li>client stub找到服务地址，并将消息发送到服务端；</li>
+<li>server stub收到消息后进行解码；</li>
+<li>server stub根据解码结果调用本地的服务；</li>
+<li>本地服务执行并将结果返回给server stub；</li>
+<li>server stub将返回结果打包成消息并发送至消费方；</li>
+<li>client stub接收到消息，并进行解码；</li>
+<li>服务消费方得到最终结果。</li>
+</ol>
+<h1 id="zookeeper"><a href="#zookeeper" class="headerlink" title="zookeeper"></a>zookeeper</h1><h4 id="ZooKeeper-提供了什么？"><a href="#ZooKeeper-提供了什么？" class="headerlink" title=".ZooKeeper 提供了什么？"></a><strong>.ZooKeeper 提供了什么？</strong></h4><ul>
+<li>1、文件系统</li>
+<li>2、通知机制</li>
+</ul>
+<p><strong>Zookeeper作为注册中心</strong></p>
+<p>路径</p>
+<p>/usr/local</p>
+<h4 id="登录zookeeper"><a href="#登录zookeeper" class="headerlink" title="登录zookeeper"></a>登录zookeeper</h4><p>cd   /export/servers/zookeeper-3.4.9/bin</p>
+<p>./zkCli.sh  </p>
+<p> zkCli.sh –server ip</p>
+<h4 id="zookeeper角色介绍"><a href="#zookeeper角色介绍" class="headerlink" title="zookeeper角色介绍"></a>zookeeper角色介绍</h4><p><img src="C:/Users/86176/Desktop/img/1562824741425.png" alt="1562824741425"></p>
+<p><strong>Leader:</strong><br> Zookeeper 集群工作的核心<br> 事务请求（写操作） 的唯一调度和处理者，保证集群事务处理的顺序性；<br> 集群内部各个服务器的调度者。<br> 对于 create， setData， delete 等有写操作的请求，则需要统一转发给leader 处理， leader 需要决定编号、执行操作，这个过程称为一个事务。<br> <strong>Follower:</strong><br> 处理客户端非事务（读操作） 请求，</p>
+<p>转发事务请求给 Leader；</p>
+<p>参与集群 Leader 选举投票 2n-1台可以做集群投票。</p>
+<h4 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h4><p>四种类型的 Znode 节点，分别对应：</p>
+<p>PERSISTENT：永久节点</p>
+<p>EPHEMERAL：临时节点</p>
+<p>PERSISTENT_SEQUENTIAL：永久节点、序列化</p>
+<p>EPHEMERAL_SEQUENTIAL：临时节点、序列化</p>
+<p>创建永久节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 3] create /hello world</p>
+<p>Created /hello </p>
+<p>创建临时节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 5] create -e /abc 123</p>
+<p>Created /abc</p>
+<p>创建永久序列化节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 6] create -s /zhangsan boy</p>
+<p>Created /zhangsan0000000004</p>
+<p>创建临时序列化节点：</p>
+<p>zk: localhost:2181(CONNECTED) 11] create -e -s /lisi boy</p>
+<p>Created /lisi0000000006</p>
+<p><strong>zookeeper节点结构</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1562839549771.png" alt="1562839549771"></p>
+<p><strong>①</strong> stat：此为状态信息, 描述该Znode的版本, 权限等信息</p>
+<p><strong>②</strong> data：与该Znode关联的数据</p>
+<p><strong>③</strong> children：该Znode下的子节点</p>
+<h4 id="查看zookeeper节点信息"><a href="#查看zookeeper节点信息" class="headerlink" title="查看zookeeper节点信息"></a>查看zookeeper节点信息</h4><p>get 命令  可以获取 Zookeeper指定节点的数据内容和属性信息。 </p>
+<p>ls 命令可以列出 Zookeeper 指定节点下的所有子节点；</p>
+<p>只能查看指定节点下的第一级的所有子节点；</p>
+<p><strong>id</strong>：被推举的Leader的SID。</p>
+<p><strong>zxid</strong>：被推举的Leader事务ID。</p>
+<p>　　<strong>electionEpoch</strong>：逻辑时钟，用来判断多个投票是否在同一轮选举周期中，该值在服务端是一个自增序列，每次进入新一轮的投票后，都会对该值进行加1操作。</p>
+<p><strong>zookeeper只认绝对路径</strong></p>
+<p>ls /dubbo/com.itheima.service.HelloService/consumers </p>
+<p>转码后</p>
+<p>consumer://192.168.140.1/com.itheima.service.HelloService?application=dubbodemo-consumer&amp;category=consumers&amp;check=false&amp;default.check=false&amp;dubbo=2.6.0&amp;interface=com.itheima.service.HelloService&amp;methods=sayHello&amp;pid=4864&amp;side=consumer&amp;timestamp=1562691361492</p>
+<h4 id="防火墙关闭"><a href="#防火墙关闭" class="headerlink" title="防火墙关闭"></a>防火墙关闭</h4><p><strong>service iptables stop</strong></p>
+<p><strong>service iptables status</strong></p>
+<p>chkconfig iptables off</p>
+<p><img src="C:/Users/86176/Desktop/img/1562825020676.png" alt="1562825020676"></p>
+<h4 id="简单shell脚本"><a href="#简单shell脚本" class="headerlink" title="简单shell脚本"></a>简单shell脚本</h4><p>echo 1 &gt; test</p>
+<p>echo  2 &gt; &gt; test </p>
+<p>微服务架构：</p>
+<p>具体实现手段：1、分库分表</p>
+<p>2、统一的服务接口</p>
+<p>3、所有的微服务都是独立的Java进程跑在独立的虚拟机上</p>
+<h1 id="Dubbo-1"><a href="#Dubbo-1" class="headerlink" title="Dubbo"></a>Dubbo</h1><h4 id="Dubbo解决了什么问题-1"><a href="#Dubbo解决了什么问题-1" class="headerlink" title="Dubbo解决了什么问题"></a>Dubbo解决了什么问题</h4><ul>
+<li>透明化的远程方法调用，就像<strong>调用本地方法一样调用远程方法</strong>，只需简单配置，没有任何API侵入。</li>
+<li>软负载均衡及容错机制，可在内网替代硬件负载均衡器，降低成本，减少单点。</li>
+<li>服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。</li>
+</ul>
+<p><strong>RPC 主要解决了</strong>：<strong>让分布式或者微服务系统中不同服务之间的调用像本地调用一样简单。</strong></p>
+<h4 id="tar-zxvf-1"><a href="#tar-zxvf-1" class="headerlink" title="tar -zxvf"></a><strong>tar -zxvf</strong></h4><p> z：通过gzip支持压缩或解压缩。还有其他的压缩或解压缩方式，比如j表示bzip2的方式。</p>
+<p>x：解压缩。c是压缩。 </p>
+<p>v：在压缩或解压缩过程中显示正在处理的文件名</p>
+<p>f：f后面必须跟上要处理的文件名。也就是说你不能写成这样 tar -zxfv zhcon-0.2.5.tar.gz </p>
+<p>z代表gzip的压缩包；x代表解压；v代表显示过程信息；f代表后面接的是文件 .</p>
+<h4 id="Dubbo负载均衡-1"><a href="#Dubbo负载均衡-1" class="headerlink" title="Dubbo负载均衡"></a>Dubbo负载均衡</h4><p>RandomLoadBalance（<strong>随机</strong>）：loadbalance=” random”</p>
+<p>RoundRobinLoadBalance（<strong>加权轮循</strong>）：loadbalance=” roundrobin”</p>
+<p>LeastActiveLoadBalance（<strong>最少活跃数</strong>）：loadbalance=” leastactive”</p>
+<p><strong>相同活跃数的随机。使慢的提供者收到更少的</strong></p>
+<p>ConsistentHashLoadBalance（<strong>一致性Hash</strong>）:loadbalance=” consistenthash</p>
+<p>一致性Hash,相同参数的请求总是发到同一个提供者</p>
+<p>缺省只是对第一个参数Hash</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "random")//随机</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "roundrobin")//轮询</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "leastactive")//最少活跃数</span></span><br><span class="line"><span class="meta">@Service</span>(protocol = <span class="string">"dubbo"</span>,loadbalance = <span class="string">"consistenthash"</span>)<span class="comment">//一致性Hash</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>常见点击错误</p>
+<p>一定要点Auto-Import</p>
+<h1 id="今日重点-2"><a href="#今日重点-2" class="headerlink" title="今日重点"></a>今日重点</h1><ol>
+<li>SOA架构和微服务架构的区别</li>
+<li><strong>Dubbo架构图会画</strong></li>
+<li><strong>Dubbo入门案例</strong></li>
+<li>Dubbo协议的使用场景</li>
+<li>启动时检查</li>
+<li>负载均衡策略</li>
+<li><strong>解决Dubbo无法发布被事务代理的Service问题</strong></li>
+</ol>
+<h1 id="架构相关-2"><a href="#架构相关-2" class="headerlink" title="架构相关"></a>架构相关</h1><h4 id="SOA-和微服务的区别-2"><a href="#SOA-和微服务的区别-2" class="headerlink" title="SOA 和微服务的区别"></a>SOA 和微服务的区别</h4><p>首先<strong>SOA</strong>和<strong>微服务架构</strong>一个层面的东西，而对于<strong>ESB</strong>和<strong>微服务网关</strong>是一个层面的东西，<strong>SOA</strong>谈的是架构风格和方法，微服务架构谈的是实现工具或组件。</p>
+<p> 1<strong>.SOA</strong>（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2<strong>.微服务架构（MicroServices）</strong>:其实和 SOA 架构类似,<strong>微服务是在 SOA 上做的升华</strong>，微服务架构强调的一个重点是“业务需要彻底的<strong>组件化和服务化</strong>”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<h4 id="名词解释-2"><a href="#名词解释-2" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>SOA</strong>(Service-Oriented Architecture)，即面向服务的架构。</p>
+<p><strong>SOA</strong>是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。</p>
+<p><strong>SOA</strong>架构中有两个主要角色：服务提供者（Provider）和服务使用者（Consumer）</p>
+<p><strong>Dubbo是SOA的典型实现</strong></p>
+<p><strong>ESB</strong>全称为Enterprise Service Bus，即<strong>企业服务总线</strong></p>
+<p>1.<strong>ESB（企业服务总线）</strong>，简单 来说 ESB 就是一根管道，用来连接各个服务节点。为了集 成不同系统，不同协议的服务，ESB 做了消息的转化解释和路由工作，让不同的服务互联互通；</p>
+<p>2.<strong>API网关是一个服务器</strong>，是系统的唯一入口,API网关方式的核心要点是，所有的客户端和消费端都通过统一的网关接入微服务</p>
+<table>
+<thead>
+<tr>
+<th align="center">方向</th>
+<th align="center">SOA</th>
+<th align="center">微服务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">解耦</td>
+<td align="center">应用程序服务的可重用性的最大化（相对耦合）</td>
+<td align="center">专注于解耦</td>
+</tr>
+<tr>
+<td align="center">可重用性</td>
+<td align="center">专注于业务功能重用</td>
+<td align="center">更重视“上下文边界”的概念；<br />以最小的依赖关系将组件及其数据耦合为单个单元；<br />通俗的讲一个功能点只专注做一件事</td>
+</tr>
+<tr>
+<td align="center">通信</td>
+<td align="center">ESB（多种消息协议）</td>
+<td align="center">消息系统，轻量级协议，例如HTTP，REST</td>
+</tr>
+<tr>
+<td align="center">数据存储</td>
+<td align="center">SOA服务共享数据存储</td>
+<td align="center">每个微服务可以有一个独立的数据存储</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><img src="C:/Users/86176/Desktop/img/20171112211133030.png" alt="SOA vs. MicroServices架构对比"></p>
+<p>微服务架构：</p>
+<p>具体实现手段：1、分库分表</p>
+<p>2、统一的服务接口</p>
+<p>3、所有的微服务都是独立的Java进程跑在独立的虚拟机上</p>
+<h1 id="Dubbo-2"><a href="#Dubbo-2" class="headerlink" title="Dubbo"></a>Dubbo</h1><h4 id="Dubbo解决了什么问题-2"><a href="#Dubbo解决了什么问题-2" class="headerlink" title="Dubbo解决了什么问题"></a>Dubbo解决了什么问题</h4><ul>
+<li>透明化的远程方法调用，就像<strong>调用本地方法一样调用远程方法</strong>，只需简单配置，没有任何API侵入。</li>
+<li>软负载均衡及容错机制，可在内网替代硬件负载均衡器，降低成本，减少单点。</li>
+<li>服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。</li>
+</ul>
+<p><strong>RPC 主要解决了</strong>：<strong>让分布式或者微服务系统中不同服务之间的调用像本地调用一样简单。</strong></p>
+<h4 id="tar-zxvf-2"><a href="#tar-zxvf-2" class="headerlink" title="tar -zxvf"></a><strong>tar -zxvf</strong></h4><p> z：通过gzip支持压缩或解压缩。还有其他的压缩或解压缩方式，比如j表示bzip2的方式。</p>
+<p>x：解压缩。c是压缩。 </p>
+<p>v：在压缩或解压缩过程中显示正在处理的文件名</p>
+<p>f：f后面必须跟上要处理的文件名。也就是说你不能写成这样 tar -zxfv zhcon-0.2.5.tar.gz </p>
+<p>z代表gzip的压缩包；x代表解压；v代表显示过程信息；f代表后面接的是文件 .</p>
+<h4 id="Dubbo负载均衡-2"><a href="#Dubbo负载均衡-2" class="headerlink" title="Dubbo负载均衡"></a>Dubbo负载均衡</h4><p>RandomLoadBalance（<strong>随机</strong>）：loadbalance=” random”</p>
+<p>RoundRobinLoadBalance（<strong>加权轮循</strong>）：loadbalance=” roundrobin”</p>
+<p>LeastActiveLoadBalance（<strong>最少活跃数</strong>）：loadbalance=” leastactive”</p>
+<p><strong>相同活跃数的随机。使慢的提供者收到更少的</strong></p>
+<p>ConsistentHashLoadBalance（<strong>一致性Hash</strong>）:loadbalance=” consistenthash</p>
+<p>一致性Hash,相同参数的请求总是发到同一个提供者</p>
+<p>缺省只是对第一个参数Hash</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "random")//随机</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "roundrobin")//轮询</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "leastactive")//最少活跃数</span></span><br><span class="line"><span class="meta">@Service</span>(protocol = <span class="string">"dubbo"</span>,loadbalance = <span class="string">"consistenthash"</span>)<span class="comment">//一致性Hash</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>常见点击错误</p>
+<p>一定要点Auto-Import</p>
+<p><img src="C:/Users/86176/Desktop/img/1564996929550.png" alt="1564996929550"></p>
+<p>Dubbo协议</p>
+<table>
+<thead>
+<tr>
+<th>协议名称</th>
+<th>实现描述</th>
+<th>连接</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dubbo</td>
+<td>传输：mina、netty、grizzy  序列化：dubbo、hessian2、java、json</td>
+<td>dubbo缺省采用单一长连接和NIO异步通讯</td>
+<td>1.传入传出参数数据包较小  2.消费者 比提供者多  3.常规远程服务方法调用  4.不适合传送大数据量的服务，比如文件、传视频</td>
+</tr>
+<tr>
+<td>rmi</td>
+<td>传输：java  rmi  序列化：java 标准序列化</td>
+<td>连接个数：多连接  连接方式：短连接  传输协议：TCP/IP  传输方式：BIO</td>
+<td>1.常规RPC调用  2.与原RMI客户端互操作  3.可传文件  4.不支持防火墙穿透</td>
+</tr>
+<tr>
+<td>hessian</td>
+<td>传输：Serverlet容器  序列化：hessian二进制序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者比消费者多  2.可传文件  3.跨语言传输</td>
+</tr>
+<tr>
+<td>http</td>
+<td>传输：servlet容器  序列化：表单序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者多余消费者  2.数据包混合</td>
+</tr>
+<tr>
+<td>webservice</td>
+<td>传输：HTTP  序列化：SOAP文件序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.系统集成  2.跨语言调用</td>
+</tr>
+<tr>
+<td>thrift</td>
+<td>与thrift RPC实现集成，并在基础上修改了报文头</td>
+<td>长连接、NIO异步传输</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>BIO（同步阻塞式IO）是一个连接一个线程。</p>
+<p>NIO（同步非阻塞式IO）是一个请求一个线程。</p>
+<ul>
+<li>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</li>
+<li>NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，JDK1.4开始支持。</li>
+</ul>
+<h4 id="单机结构—–集群结构——分布式结构-1"><a href="#单机结构—–集群结构——分布式结构-1" class="headerlink" title="单机结构—–集群结构——分布式结构"></a><strong>单机结构—–集群结构——分布式结构</strong></h4><p><img src="C:/Users/86176/Desktop/img/v2-e628e972ac34b597ba2c1f7f0d326705_r.jpg" alt="preview"></p>
+<p><strong>分布式结构：</strong>按照业务功能，拆分成一个个独立的子系统，这些子系统能够独立运行在web容器中，它们之间通过RPC方式通信。</p>
+<p>集群和分布式，<br>●集群:很多“人”一起，干一样的事。一个业务模块，部署在多台服务器上。<br>●分布式:很多”人”一起，干不样的事。</p>
+<h4 id="RPC的调用原理-1"><a href="#RPC的调用原理-1" class="headerlink" title="RPC的调用原理"></a><strong>RPC的调用原理</strong></h4><p>​                                        <strong>client</strong>                                                                           <strong>Server</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1576834531069.png" alt="1576834531069"></p>
+<ol>
+<li>服务消费方（client）调用以本地调用方式调用服务；</li>
+<li>client stub接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；</li>
+<li>client stub找到服务地址，并将消息发送到服务端；</li>
+<li>server stub收到消息后进行解码；</li>
+<li>server stub根据解码结果调用本地的服务；</li>
+<li>本地服务执行并将结果返回给server stub；</li>
+<li>server stub将返回结果打包成消息并发送至消费方；</li>
+<li>client stub接收到消息，并进行解码；</li>
+<li>服务消费方得到最终结果。</li>
+</ol>
+<h1 id="zookeeper-1"><a href="#zookeeper-1" class="headerlink" title="zookeeper"></a>zookeeper</h1><h4 id="ZooKeeper-提供了什么？-1"><a href="#ZooKeeper-提供了什么？-1" class="headerlink" title=".ZooKeeper 提供了什么？"></a><strong>.ZooKeeper 提供了什么？</strong></h4><ul>
+<li>1、文件系统</li>
+<li>2、通知机制</li>
+</ul>
+<p><strong>Zookeeper作为注册中心</strong></p>
+<p>路径</p>
+<p>/usr/local</p>
+<h4 id="登录zookeeper-1"><a href="#登录zookeeper-1" class="headerlink" title="登录zookeeper"></a>登录zookeeper</h4><p>cd   /export/servers/zookeeper-3.4.9/bin</p>
+<p>./zkCli.sh  </p>
+<p> zkCli.sh –server ip</p>
+<h4 id="zookeeper角色介绍-1"><a href="#zookeeper角色介绍-1" class="headerlink" title="zookeeper角色介绍"></a>zookeeper角色介绍</h4><p><img src="C:/Users/86176/Desktop/img/1562824741425.png" alt="1562824741425"></p>
+<p><strong>Leader:</strong><br> Zookeeper 集群工作的核心<br> 事务请求（写操作） 的唯一调度和处理者，保证集群事务处理的顺序性；<br> 集群内部各个服务器的调度者。<br> 对于 create， setData， delete 等有写操作的请求，则需要统一转发给leader 处理， leader 需要决定编号、执行操作，这个过程称为一个事务。<br> <strong>Follower:</strong><br> 处理客户端非事务（读操作） 请求，</p>
+<p>转发事务请求给 Leader；</p>
+<p>参与集群 Leader 选举投票 2n-1台可以做集群投票。</p>
+<h4 id="创建节点-1"><a href="#创建节点-1" class="headerlink" title="创建节点"></a>创建节点</h4><p>四种类型的 Znode 节点，分别对应：</p>
+<p>PERSISTENT：永久节点</p>
+<p>EPHEMERAL：临时节点</p>
+<p>PERSISTENT_SEQUENTIAL：永久节点、序列化</p>
+<p>EPHEMERAL_SEQUENTIAL：临时节点、序列化</p>
+<p>创建永久节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 3] create /hello world</p>
+<p>Created /hello </p>
+<p>创建临时节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 5] create -e /abc 123</p>
+<p>Created /abc</p>
+<p>创建永久序列化节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 6] create -s /zhangsan boy</p>
+<p>Created /zhangsan0000000004</p>
+<p>创建临时序列化节点：</p>
+<p>zk: localhost:2181(CONNECTED) 11] create -e -s /lisi boy</p>
+<p>Created /lisi0000000006</p>
+<p><strong>zookeeper节点结构</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1562839549771.png" alt="1562839549771"></p>
+<p><strong>①</strong> stat：此为状态信息, 描述该Znode的版本, 权限等信息</p>
+<p><strong>②</strong> data：与该Znode关联的数据</p>
+<p><strong>③</strong> children：该Znode下的子节点</p>
+<h4 id="查看zookeeper节点信息-1"><a href="#查看zookeeper节点信息-1" class="headerlink" title="查看zookeeper节点信息"></a>查看zookeeper节点信息</h4><p>get 命令  可以获取 Zookeeper指定节点的数据内容和属性信息。 </p>
+<p>ls 命令可以列出 Zookeeper 指定节点下的所有子节点；</p>
+<p>只能查看指定节点下的第一级的所有子节点；</p>
+<p><strong>id</strong>：被推举的Leader的SID。</p>
+<p><strong>zxid</strong>：被推举的Leader事务ID。</p>
+<p>　　<strong>electionEpoch</strong>：逻辑时钟，用来判断多个投票是否在同一轮选举周期中，该值在服务端是一个自增序列，每次进入新一轮的投票后，都会对该值进行加1操作。</p>
+<p><strong>zookeeper只认绝对路径</strong></p>
+<p>ls /dubbo/com.itheima.service.HelloService/consumers </p>
+<p>转码后</p>
+<p>consumer://192.168.140.1/com.itheima.service.HelloService?application=dubbodemo-consumer&amp;category=consumers&amp;check=false&amp;default.check=false&amp;dubbo=2.6.0&amp;interface=com.itheima.service.HelloService&amp;methods=sayHello&amp;pid=4864&amp;side=consumer&amp;timestamp=1562691361492</p>
+<h4 id="防火墙关闭-1"><a href="#防火墙关闭-1" class="headerlink" title="防火墙关闭"></a>防火墙关闭</h4><p><strong>service iptables stop</strong></p>
+<p><strong>service iptables status</strong></p>
+<p>chkconfig iptables off</p>
+<p><img src="C:/Users/86176/Desktop/img/1562825020676.png" alt="1562825020676"></p>
+<h4 id="简单shell脚本-1"><a href="#简单shell脚本-1" class="headerlink" title="简单shell脚本"></a>简单shell脚本</h4><p>echo 1 &gt; test</p>
+<p>echo  2 &gt; &gt; test </p>
+<p>Dubbo协议</p>
+<table>
+<thead>
+<tr>
+<th>协议名称</th>
+<th>实现描述</th>
+<th>连接</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dubbo</td>
+<td>传输：mina、netty、grizzy  序列化：dubbo、hessian2、java、json</td>
+<td>dubbo缺省采用单一长连接和NIO异步通讯</td>
+<td>1.传入传出参数数据包较小  2.消费者 比提供者多  3.常规远程服务方法调用  4.不适合传送大数据量的服务，比如文件、传视频</td>
+</tr>
+<tr>
+<td>rmi</td>
+<td>传输：java  rmi  序列化：java 标准序列化</td>
+<td>连接个数：多连接  连接方式：短连接  传输协议：TCP/IP  传输方式：BIO</td>
+<td>1.常规RPC调用  2.与原RMI客户端互操作  3.可传文件  4.不支持防火墙穿透</td>
+</tr>
+<tr>
+<td>hessian</td>
+<td>传输：Serverlet容器  序列化：hessian二进制序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者比消费者多  2.可传文件  3.跨语言传输</td>
+</tr>
+<tr>
+<td>http</td>
+<td>传输：servlet容器  序列化：表单序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者多余消费者  2.数据包混合</td>
+</tr>
+<tr>
+<td>webservice</td>
+<td>传输：HTTP  序列化：SOAP文件序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.系统集成  2.跨语言调用</td>
+</tr>
+<tr>
+<td>thrift</td>
+<td>与thrift RPC实现集成，并在基础上修改了报文头</td>
+<td>长连接、NIO异步传输</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>BIO（同步阻塞式IO）是一个连接一个线程。</p>
+<p>NIO（同步非阻塞式IO）是一个请求一个线程。</p>
+<ul>
+<li>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</li>
+<li>NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，JDK1.4开始支持。</li>
+</ul>
+<h4 id="单机结构—–集群结构——分布式结构-2"><a href="#单机结构—–集群结构——分布式结构-2" class="headerlink" title="单机结构—–集群结构——分布式结构"></a><strong>单机结构—–集群结构——分布式结构</strong></h4><h1 id="今日重点-3"><a href="#今日重点-3" class="headerlink" title="今日重点"></a>今日重点</h1><ol>
+<li>SOA架构和微服务架构的区别</li>
+<li><strong>Dubbo架构图会画</strong></li>
+<li><strong>Dubbo入门案例</strong></li>
+<li>Dubbo协议的使用场景</li>
+<li>启动时检查</li>
+<li>负载均衡策略</li>
+<li><strong>解决Dubbo无法发布被事务代理的Service问题</strong></li>
+</ol>
+<h1 id="架构相关-3"><a href="#架构相关-3" class="headerlink" title="架构相关"></a>架构相关</h1><h4 id="SOA-和微服务的区别-3"><a href="#SOA-和微服务的区别-3" class="headerlink" title="SOA 和微服务的区别"></a>SOA 和微服务的区别</h4><p>首先<strong>SOA</strong>和<strong>微服务架构</strong>一个层面的东西，而对于<strong>ESB</strong>和<strong>微服务网关</strong>是一个层面的东西，<strong>SOA</strong>谈的是架构风格和方法，微服务架构谈的是实现工具或组件。</p>
+<p> 1<strong>.SOA</strong>（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2<strong>.微服务架构（MicroServices）</strong>:其实和 SOA 架构类似,<strong>微服务是在 SOA 上做的升华</strong>，微服务架构强调的一个重点是“业务需要彻底的<strong>组件化和服务化</strong>”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<h4 id="名词解释-3"><a href="#名词解释-3" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>SOA</strong>(Service-Oriented Architecture)，即面向服务的架构。</p>
+<p><strong>SOA</strong>是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。</p>
+<p><strong>SOA</strong>架构中有两个主要角色：服务提供者（Provider）和服务使用者（Consumer）</p>
+<p><strong>Dubbo是SOA的典型实现</strong></p>
+<p><strong>ESB</strong>全称为Enterprise Service Bus，即<strong>企业服务总线</strong></p>
+<p>1.<strong>ESB（企业服务总线）</strong>，简单 来说 ESB 就是一根管道，用来连接各个服务节点。为了集 成不同系统，不同协议的服务，ESB 做了消息的转化解释和路由工作，让不同的服务互联互通；</p>
+<p>2.<strong>API网关是一个服务器</strong>，是系统的唯一入口,API网关方式的核心要点是，所有的客户端和消费端都通过统一的网关接入微服务</p>
+<table>
+<thead>
+<tr>
+<th align="center">方向</th>
+<th align="center">SOA</th>
+<th align="center">微服务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">解耦</td>
+<td align="center">应用程序服务的可重用性的最大化（相对耦合）</td>
+<td align="center">专注于解耦</td>
+</tr>
+<tr>
+<td align="center">可重用性</td>
+<td align="center">专注于业务功能重用</td>
+<td align="center">更重视“上下文边界”的概念；<br />以最小的依赖关系将组件及其数据耦合为单个单元；<br />通俗的讲一个功能点只专注做一件事</td>
+</tr>
+<tr>
+<td align="center">通信</td>
+<td align="center">ESB（多种消息协议）</td>
+<td align="center">消息系统，轻量级协议，例如HTTP，REST</td>
+</tr>
+<tr>
+<td align="center">数据存储</td>
+<td align="center">SOA服务共享数据存储</td>
+<td align="center">每个微服务可以有一个独立的数据存储</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><img src="C:/Users/86176/Desktop/img/20171112211133030.png" alt="SOA vs. MicroServices架构对比"></p>
+<p>微服务架构：</p>
+<p>具体实现手段：1、分库分表</p>
+<p>2、统一的服务接口</p>
+<p>3、所有的微服务都是独立的Java进程跑在独立的虚拟机上</p>
+<h1 id="Dubbo-3"><a href="#Dubbo-3" class="headerlink" title="Dubbo"></a>Dubbo</h1><h4 id="Dubbo解决了什么问题-3"><a href="#Dubbo解决了什么问题-3" class="headerlink" title="Dubbo解决了什么问题"></a>Dubbo解决了什么问题</h4><ul>
+<li>透明化的远程方法调用，就像<strong>调用本地方法一样调用远程方法</strong>，只需简单配置，没有任何API侵入。</li>
+<li>软负载均衡及容错机制，可在内网替代硬件负载均衡器，降低成本，减少单点。</li>
+<li>服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。</li>
+</ul>
+<p><strong>RPC 主要解决了</strong>：<strong>让分布式或者微服务系统中不同服务之间的调用像本地调用一样简单。</strong></p>
+<h4 id="tar-zxvf-3"><a href="#tar-zxvf-3" class="headerlink" title="tar -zxvf"></a><strong>tar -zxvf</strong></h4><p> z：通过gzip支持压缩或解压缩。还有其他的压缩或解压缩方式，比如j表示bzip2的方式。</p>
+<p>x：解压缩。c是压缩。 </p>
+<p>v：在压缩或解压缩过程中显示正在处理的文件名</p>
+<p>f：f后面必须跟上要处理的文件名。也就是说你不能写成这样 tar -zxfv zhcon-0.2.5.tar.gz </p>
+<p>z代表gzip的压缩包；x代表解压；v代表显示过程信息；f代表后面接的是文件 .</p>
+<h4 id="Dubbo负载均衡-3"><a href="#Dubbo负载均衡-3" class="headerlink" title="Dubbo负载均衡"></a>Dubbo负载均衡</h4><p>RandomLoadBalance（<strong>随机</strong>）：loadbalance=” random”</p>
+<p>RoundRobinLoadBalance（<strong>加权轮循</strong>）：loadbalance=” roundrobin”</p>
+<p>LeastActiveLoadBalance（<strong>最少活跃数</strong>）：loadbalance=” leastactive”</p>
+<p><strong>相同活跃数的随机。使慢的提供者收到更少的</strong></p>
+<p>ConsistentHashLoadBalance（<strong>一致性Hash</strong>）:loadbalance=” consistenthash</p>
+<p>一致性Hash,相同参数的请求总是发到同一个提供者</p>
+<p>缺省只是对第一个参数Hash</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "random")//随机</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "roundrobin")//轮询</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "leastactive")//最少活跃数</span></span><br><span class="line"><span class="meta">@Service</span>(protocol = <span class="string">"dubbo"</span>,loadbalance = <span class="string">"consistenthash"</span>)<span class="comment">//一致性Hash</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>常见点击错误</p>
+<p>一定要点Auto-Import</p>
+<p><img src="C:/Users/86176/Desktop/img/1564996929550.png" alt="1564996929550"></p>
+<p>Dubbo协议</p>
+<table>
+<thead>
+<tr>
+<th>协议名称</th>
+<th>实现描述</th>
+<th>连接</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dubbo</td>
+<td>传输：mina、netty、grizzy  序列化：dubbo、hessian2、java、json</td>
+<td>dubbo缺省采用单一长连接和NIO异步通讯</td>
+<td>1.传入传出参数数据包较小  2.消费者 比提供者多  3.常规远程服务方法调用  4.不适合传送大数据量的服务，比如文件、传视频</td>
+</tr>
+<tr>
+<td>rmi</td>
+<td>传输：java  rmi  序列化：java 标准序列化</td>
+<td>连接个数：多连接  连接方式：短连接  传输协议：TCP/IP  传输方式：BIO</td>
+<td>1.常规RPC调用  2.与原RMI客户端互操作  3.可传文件  4.不支持防火墙穿透</td>
+</tr>
+<tr>
+<td>hessian</td>
+<td>传输：Serverlet容器  序列化：hessian二进制序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者比消费者多  2.可传文件  3.跨语言传输</td>
+</tr>
+<tr>
+<td>http</td>
+<td>传输：servlet容器  序列化：表单序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者多余消费者  2.数据包混合</td>
+</tr>
+<tr>
+<td>webservice</td>
+<td>传输：HTTP  序列化：SOAP文件序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.系统集成  2.跨语言调用</td>
+</tr>
+<tr>
+<td>thrift</td>
+<td>与thrift RPC实现集成，并在基础上修改了报文头</td>
+<td>长连接、NIO异步传输</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>BIO（同步阻塞式IO）是一个连接一个线程。</p>
+<p>NIO（同步非阻塞式IO）是一个请求一个线程。</p>
+<ul>
+<li>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</li>
+<li>NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，JDK1.4开始支持。</li>
+</ul>
+<h4 id="单机结构—–集群结构——分布式结构-3"><a href="#单机结构—–集群结构——分布式结构-3" class="headerlink" title="单机结构—–集群结构——分布式结构"></a><strong>单机结构—–集群结构——分布式结构</strong></h4><p><img src="C:/Users/86176/Desktop/img/v2-e628e972ac34b597ba2c1f7f0d326705_r.jpg" alt="preview"></p>
+<p><strong>分布式结构：</strong>按照业务功能，拆分成一个个独立的子系统，这些子系统能够独立运行在web容器中，它们之间通过RPC方式通信。</p>
+<p>集群和分布式，<br>●集群:很多“人”一起，干一样的事。一个业务模块，部署在多台服务器上。<br>●分布式:很多”人”一起，干不样的事。</p>
+<h4 id="RPC的调用原理-2"><a href="#RPC的调用原理-2" class="headerlink" title="RPC的调用原理"></a><strong>RPC的调用原理</strong></h4><p>​                                        <strong>client</strong>                                                                           <strong>Server</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1576834531069.png" alt="1576834531069"></p>
+<ol>
+<li>服务消费方（client）调用以本地调用方式调用服务；</li>
+<li>client stub接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；</li>
+<li>client stub找到服务地址，并将消息发送到服务端；</li>
+<li>server stub收到消息后进行解码；</li>
+<li>server stub根据解码结果调用本地的服务；</li>
+<li>本地服务执行并将结果返回给server stub；</li>
+<li>server stub将返回结果打包成消息并发送至消费方；</li>
+<li>client stub接收到消息，并进行解码；</li>
+<li>服务消费方得到最终结果。</li>
+</ol>
+<h1 id="zookeeper-2"><a href="#zookeeper-2" class="headerlink" title="zookeeper"></a>zookeeper</h1><h4 id="ZooKeeper-提供了什么？-2"><a href="#ZooKeeper-提供了什么？-2" class="headerlink" title=".ZooKeeper 提供了什么？"></a><strong>.ZooKeeper 提供了什么？</strong></h4><ul>
+<li>1、文件系统</li>
+<li>2、通知机制</li>
+</ul>
+<p><strong>Zookeeper作为注册中心</strong></p>
+<p>路径</p>
+<p>/usr/local</p>
+<h4 id="登录zookeeper-2"><a href="#登录zookeeper-2" class="headerlink" title="登录zookeeper"></a>登录zookeeper</h4><p>cd   /export/servers/zookeeper-3.4.9/bin</p>
+<p>./zkCli.sh  </p>
+<p> zkCli.sh –server ip</p>
+<h4 id="zookeeper角色介绍-2"><a href="#zookeeper角色介绍-2" class="headerlink" title="zookeeper角色介绍"></a>zookeeper角色介绍</h4><p><img src="C:/Users/86176/Desktop/img/1562824741425.png" alt="1562824741425"></p>
+<p><strong>Leader:</strong><br> Zookeeper 集群工作的核心<br> 事务请求（写操作） 的唯一调度和处理者，保证集群事务处理的顺序性；<br> 集群内部各个服务器的调度者。<br> 对于 create， setData， delete 等有写操作的请求，则需要统一转发给leader 处理， leader 需要决定编号、执行操作，这个过程称为一个事务。<br> <strong>Follower:</strong><br> 处理客户端非事务（读操作） 请求，</p>
+<p>转发事务请求给 Leader；</p>
+<p>参与集群 Leader 选举投票 2n-1台可以做集群投票。</p>
+<h4 id="创建节点-2"><a href="#创建节点-2" class="headerlink" title="创建节点"></a>创建节点</h4><p>四种类型的 Znode 节点，分别对应：</p>
+<p>PERSISTENT：永久节点</p>
+<p>EPHEMERAL：临时节点</p>
+<p>PERSISTENT_SEQUENTIAL：永久节点、序列化</p>
+<p>EPHEMERAL_SEQUENTIAL：临时节点、序列化</p>
+<p>创建永久节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 3] create /hello world</p>
+<p>Created /hello </p>
+<p>创建临时节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 5] create -e /abc 123</p>
+<p>Created /abc</p>
+<p>创建永久序列化节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 6] create -s /zhangsan boy</p>
+<p>Created /zhangsan0000000004</p>
+<p>创建临时序列化节点：</p>
+<p>zk: localhost:2181(CONNECTED) 11] create -e -s /lisi boy</p>
+<p>Created /lisi0000000006</p>
+<p><strong>zookeeper节点结构</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1562839549771.png" alt="1562839549771"></p>
+<p><strong>①</strong> stat：此为状态信息, 描述该Znode的版本, 权限等信息</p>
+<p><strong>②</strong> data：与该Znode关联的数据</p>
+<p><strong>③</strong> children：该Znode下的子节点</p>
+<h4 id="查看zookeeper节点信息-2"><a href="#查看zookeeper节点信息-2" class="headerlink" title="查看zookeeper节点信息"></a>查看zookeeper节点信息</h4><p>get 命令  可以获取 Zookeeper指定节点的数据内容和属性信息。 </p>
+<p>ls 命令可以列出 Zookeeper 指定节点下的所有子节点；</p>
+<p>只能查看指定节点下的第一级的所有子节点；</p>
+<p><strong>id</strong>：被推举的Leader的SID。</p>
+<p><strong>zxid</strong>：被推举的Leader事务ID。</p>
+<p>　　<strong>electionEpoch</strong>：逻辑时钟，用来判断多个投票是否在同一轮选举周期中，该值在服务端是一个自增序列，每次进入新一轮的投票后，都会对该值进行加1操作。</p>
+<p><strong>zookeeper只认绝对路径</strong></p>
+<p>ls /dubbo/com.itheima.service.HelloService/consumers </p>
+<p>转码后</p>
+<p>consumer://192.168.140.1/com.itheima.service.HelloService?application=dubbodemo-consumer&amp;category=consumers&amp;check=false&amp;default.check=false&amp;dubbo=2.6.0&amp;interface=com.itheima.service.HelloService&amp;methods=sayHello&amp;pid=4864&amp;side=consumer&amp;timestamp=1562691361492</p>
+<h4 id="防火墙关闭-2"><a href="#防火墙关闭-2" class="headerlink" title="防火墙关闭"></a>防火墙关闭</h4><p><strong>service iptables stop</strong></p>
+<p><strong>service iptables status</strong></p>
+<p>chkconfig iptables off</p>
+<p><img src="C:/Users/86176/Desktop/img/1562825020676.png" alt="1562825020676"></p>
+<h4 id="简单shell脚本-2"><a href="#简单shell脚本-2" class="headerlink" title="简单shell脚本"></a>简单shell脚本</h4><p>echo 1 &gt; test</p>
+<p>echo  2 &gt; &gt; test </p>
+<p><strong>分布式结构：</strong>按照业务功能，拆分成一个个独立的子系统，这些子系统能够独立运行在web容器中，它们之间通过RPC方式通信。</p>
+<p>集群和分布式，<br>●集群:很多“人”一起，干一样的事。一个业务模块，部署在多台服务器上。<br>●分布式:很多”人”一起，干不样的事。</p>
+<h4 id="RPC的调用原理-3"><a href="#RPC的调用原理-3" class="headerlink" title="RPC的调用原理"></a><strong>RPC的调用原理</strong></h4><p>​                                        <strong>client</strong>                                                                           <strong>Server</strong></p>
+<h1 id="今日重点-4"><a href="#今日重点-4" class="headerlink" title="今日重点"></a>今日重点</h1><ol>
+<li>SOA架构和微服务架构的区别</li>
+<li><strong>Dubbo架构图会画</strong></li>
+<li><strong>Dubbo入门案例</strong></li>
+<li>Dubbo协议的使用场景</li>
+<li>启动时检查</li>
+<li>负载均衡策略</li>
+<li><strong>解决Dubbo无法发布被事务代理的Service问题</strong></li>
+</ol>
+<h1 id="架构相关-4"><a href="#架构相关-4" class="headerlink" title="架构相关"></a>架构相关</h1><h4 id="SOA-和微服务的区别-4"><a href="#SOA-和微服务的区别-4" class="headerlink" title="SOA 和微服务的区别"></a>SOA 和微服务的区别</h4><p>首先<strong>SOA</strong>和<strong>微服务架构</strong>一个层面的东西，而对于<strong>ESB</strong>和<strong>微服务网关</strong>是一个层面的东西，<strong>SOA</strong>谈的是架构风格和方法，微服务架构谈的是实现工具或组件。</p>
+<p> 1<strong>.SOA</strong>（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2<strong>.微服务架构（MicroServices）</strong>:其实和 SOA 架构类似,<strong>微服务是在 SOA 上做的升华</strong>，微服务架构强调的一个重点是“业务需要彻底的<strong>组件化和服务化</strong>”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<h4 id="名词解释-4"><a href="#名词解释-4" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>SOA</strong>(Service-Oriented Architecture)，即面向服务的架构。</p>
+<p><strong>SOA</strong>是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。</p>
+<p><strong>SOA</strong>架构中有两个主要角色：服务提供者（Provider）和服务使用者（Consumer）</p>
+<p><strong>Dubbo是SOA的典型实现</strong></p>
+<p><strong>ESB</strong>全称为Enterprise Service Bus，即<strong>企业服务总线</strong></p>
+<p>1.<strong>ESB（企业服务总线）</strong>，简单 来说 ESB 就是一根管道，用来连接各个服务节点。为了集 成不同系统，不同协议的服务，ESB 做了消息的转化解释和路由工作，让不同的服务互联互通；</p>
+<p>2.<strong>API网关是一个服务器</strong>，是系统的唯一入口,API网关方式的核心要点是，所有的客户端和消费端都通过统一的网关接入微服务</p>
+<table>
+<thead>
+<tr>
+<th align="center">方向</th>
+<th align="center">SOA</th>
+<th align="center">微服务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">解耦</td>
+<td align="center">应用程序服务的可重用性的最大化（相对耦合）</td>
+<td align="center">专注于解耦</td>
+</tr>
+<tr>
+<td align="center">可重用性</td>
+<td align="center">专注于业务功能重用</td>
+<td align="center">更重视“上下文边界”的概念；<br />以最小的依赖关系将组件及其数据耦合为单个单元；<br />通俗的讲一个功能点只专注做一件事</td>
+</tr>
+<tr>
+<td align="center">通信</td>
+<td align="center">ESB（多种消息协议）</td>
+<td align="center">消息系统，轻量级协议，例如HTTP，REST</td>
+</tr>
+<tr>
+<td align="center">数据存储</td>
+<td align="center">SOA服务共享数据存储</td>
+<td align="center">每个微服务可以有一个独立的数据存储</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><img src="C:/Users/86176/Desktop/img/20171112211133030.png" alt="SOA vs. MicroServices架构对比"></p>
+<p>微服务架构：</p>
+<p>具体实现手段：1、分库分表</p>
+<p>2、统一的服务接口</p>
+<p>3、所有的微服务都是独立的Java进程跑在独立的虚拟机上</p>
+<h1 id="Dubbo-4"><a href="#Dubbo-4" class="headerlink" title="Dubbo"></a>Dubbo</h1><h4 id="Dubbo解决了什么问题-4"><a href="#Dubbo解决了什么问题-4" class="headerlink" title="Dubbo解决了什么问题"></a>Dubbo解决了什么问题</h4><ul>
+<li>透明化的远程方法调用，就像<strong>调用本地方法一样调用远程方法</strong>，只需简单配置，没有任何API侵入。</li>
+<li>软负载均衡及容错机制，可在内网替代硬件负载均衡器，降低成本，减少单点。</li>
+<li>服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。</li>
+</ul>
+<p><strong>RPC 主要解决了</strong>：<strong>让分布式或者微服务系统中不同服务之间的调用像本地调用一样简单。</strong></p>
+<h4 id="tar-zxvf-4"><a href="#tar-zxvf-4" class="headerlink" title="tar -zxvf"></a><strong>tar -zxvf</strong></h4><p> z：通过gzip支持压缩或解压缩。还有其他的压缩或解压缩方式，比如j表示bzip2的方式。</p>
+<p>x：解压缩。c是压缩。 </p>
+<p>v：在压缩或解压缩过程中显示正在处理的文件名</p>
+<p>f：f后面必须跟上要处理的文件名。也就是说你不能写成这样 tar -zxfv zhcon-0.2.5.tar.gz </p>
+<p>z代表gzip的压缩包；x代表解压；v代表显示过程信息；f代表后面接的是文件 .</p>
+<h4 id="Dubbo负载均衡-4"><a href="#Dubbo负载均衡-4" class="headerlink" title="Dubbo负载均衡"></a>Dubbo负载均衡</h4><p>RandomLoadBalance（<strong>随机</strong>）：loadbalance=” random”</p>
+<p>RoundRobinLoadBalance（<strong>加权轮循</strong>）：loadbalance=” roundrobin”</p>
+<p>LeastActiveLoadBalance（<strong>最少活跃数</strong>）：loadbalance=” leastactive”</p>
+<p><strong>相同活跃数的随机。使慢的提供者收到更少的</strong></p>
+<p>ConsistentHashLoadBalance（<strong>一致性Hash</strong>）:loadbalance=” consistenthash</p>
+<p>一致性Hash,相同参数的请求总是发到同一个提供者</p>
+<p>缺省只是对第一个参数Hash</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "random")//随机</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "roundrobin")//轮询</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "leastactive")//最少活跃数</span></span><br><span class="line"><span class="meta">@Service</span>(protocol = <span class="string">"dubbo"</span>,loadbalance = <span class="string">"consistenthash"</span>)<span class="comment">//一致性Hash</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>常见点击错误</p>
+<p>一定要点Auto-Import</p>
+<p><img src="C:/Users/86176/Desktop/img/1564996929550.png" alt="1564996929550"></p>
+<p>Dubbo协议</p>
+<table>
+<thead>
+<tr>
+<th>协议名称</th>
+<th>实现描述</th>
+<th>连接</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dubbo</td>
+<td>传输：mina、netty、grizzy  序列化：dubbo、hessian2、java、json</td>
+<td>dubbo缺省采用单一长连接和NIO异步通讯</td>
+<td>1.传入传出参数数据包较小  2.消费者 比提供者多  3.常规远程服务方法调用  4.不适合传送大数据量的服务，比如文件、传视频</td>
+</tr>
+<tr>
+<td>rmi</td>
+<td>传输：java  rmi  序列化：java 标准序列化</td>
+<td>连接个数：多连接  连接方式：短连接  传输协议：TCP/IP  传输方式：BIO</td>
+<td>1.常规RPC调用  2.与原RMI客户端互操作  3.可传文件  4.不支持防火墙穿透</td>
+</tr>
+<tr>
+<td>hessian</td>
+<td>传输：Serverlet容器  序列化：hessian二进制序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者比消费者多  2.可传文件  3.跨语言传输</td>
+</tr>
+<tr>
+<td>http</td>
+<td>传输：servlet容器  序列化：表单序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者多余消费者  2.数据包混合</td>
+</tr>
+<tr>
+<td>webservice</td>
+<td>传输：HTTP  序列化：SOAP文件序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.系统集成  2.跨语言调用</td>
+</tr>
+<tr>
+<td>thrift</td>
+<td>与thrift RPC实现集成，并在基础上修改了报文头</td>
+<td>长连接、NIO异步传输</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>BIO（同步阻塞式IO）是一个连接一个线程。</p>
+<p>NIO（同步非阻塞式IO）是一个请求一个线程。</p>
+<ul>
+<li>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</li>
+<li>NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，JDK1.4开始支持。</li>
+</ul>
+<h4 id="单机结构—–集群结构——分布式结构-4"><a href="#单机结构—–集群结构——分布式结构-4" class="headerlink" title="单机结构—–集群结构——分布式结构"></a><strong>单机结构—–集群结构——分布式结构</strong></h4><p><img src="C:/Users/86176/Desktop/img/v2-e628e972ac34b597ba2c1f7f0d326705_r.jpg" alt="preview"></p>
+<p><strong>分布式结构：</strong>按照业务功能，拆分成一个个独立的子系统，这些子系统能够独立运行在web容器中，它们之间通过RPC方式通信。</p>
+<p>集群和分布式，<br>●集群:很多“人”一起，干一样的事。一个业务模块，部署在多台服务器上。<br>●分布式:很多”人”一起，干不样的事。</p>
+<h4 id="RPC的调用原理-4"><a href="#RPC的调用原理-4" class="headerlink" title="RPC的调用原理"></a><strong>RPC的调用原理</strong></h4><p>​                                        <strong>client</strong>                                                                           <strong>Server</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1576834531069.png" alt="1576834531069"></p>
+<ol>
+<li>服务消费方（client）调用以本地调用方式调用服务；</li>
+<li>client stub接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；</li>
+<li>client stub找到服务地址，并将消息发送到服务端；</li>
+<li>server stub收到消息后进行解码；</li>
+<li>server stub根据解码结果调用本地的服务；</li>
+<li>本地服务执行并将结果返回给server stub；</li>
+<li>server stub将返回结果打包成消息并发送至消费方；</li>
+<li>client stub接收到消息，并进行解码；</li>
+<li>服务消费方得到最终结果。</li>
+</ol>
+<h1 id="zookeeper-3"><a href="#zookeeper-3" class="headerlink" title="zookeeper"></a>zookeeper</h1><h4 id="ZooKeeper-提供了什么？-3"><a href="#ZooKeeper-提供了什么？-3" class="headerlink" title=".ZooKeeper 提供了什么？"></a><strong>.ZooKeeper 提供了什么？</strong></h4><ul>
+<li>1、文件系统</li>
+<li>2、通知机制</li>
+</ul>
+<p><strong>Zookeeper作为注册中心</strong></p>
+<p>路径</p>
+<p>/usr/local</p>
+<h4 id="登录zookeeper-3"><a href="#登录zookeeper-3" class="headerlink" title="登录zookeeper"></a>登录zookeeper</h4><p>cd   /export/servers/zookeeper-3.4.9/bin</p>
+<p>./zkCli.sh  </p>
+<p> zkCli.sh –server ip</p>
+<h4 id="zookeeper角色介绍-3"><a href="#zookeeper角色介绍-3" class="headerlink" title="zookeeper角色介绍"></a>zookeeper角色介绍</h4><p><img src="C:/Users/86176/Desktop/img/1562824741425.png" alt="1562824741425"></p>
+<p><strong>Leader:</strong><br> Zookeeper 集群工作的核心<br> 事务请求（写操作） 的唯一调度和处理者，保证集群事务处理的顺序性；<br> 集群内部各个服务器的调度者。<br> 对于 create， setData， delete 等有写操作的请求，则需要统一转发给leader 处理， leader 需要决定编号、执行操作，这个过程称为一个事务。<br> <strong>Follower:</strong><br> 处理客户端非事务（读操作） 请求，</p>
+<p>转发事务请求给 Leader；</p>
+<p>参与集群 Leader 选举投票 2n-1台可以做集群投票。</p>
+<h4 id="创建节点-3"><a href="#创建节点-3" class="headerlink" title="创建节点"></a>创建节点</h4><p>四种类型的 Znode 节点，分别对应：</p>
+<p>PERSISTENT：永久节点</p>
+<p>EPHEMERAL：临时节点</p>
+<p>PERSISTENT_SEQUENTIAL：永久节点、序列化</p>
+<p>EPHEMERAL_SEQUENTIAL：临时节点、序列化</p>
+<p>创建永久节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 3] create /hello world</p>
+<p>Created /hello </p>
+<p>创建临时节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 5] create -e /abc 123</p>
+<p>Created /abc</p>
+<p>创建永久序列化节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 6] create -s /zhangsan boy</p>
+<p>Created /zhangsan0000000004</p>
+<p>创建临时序列化节点：</p>
+<p>zk: localhost:2181(CONNECTED) 11] create -e -s /lisi boy</p>
+<p>Created /lisi0000000006</p>
+<p><strong>zookeeper节点结构</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1562839549771.png" alt="1562839549771"></p>
+<p><strong>①</strong> stat：此为状态信息, 描述该Znode的版本, 权限等信息</p>
+<p><strong>②</strong> data：与该Znode关联的数据</p>
+<p><strong>③</strong> children：该Znode下的子节点</p>
+<h4 id="查看zookeeper节点信息-3"><a href="#查看zookeeper节点信息-3" class="headerlink" title="查看zookeeper节点信息"></a>查看zookeeper节点信息</h4><p>get 命令  可以获取 Zookeeper指定节点的数据内容和属性信息。 </p>
+<p>ls 命令可以列出 Zookeeper 指定节点下的所有子节点；</p>
+<p>只能查看指定节点下的第一级的所有子节点；</p>
+<p><strong>id</strong>：被推举的Leader的SID。</p>
+<p><strong>zxid</strong>：被推举的Leader事务ID。</p>
+<p>　　<strong>electionEpoch</strong>：逻辑时钟，用来判断多个投票是否在同一轮选举周期中，该值在服务端是一个自增序列，每次进入新一轮的投票后，都会对该值进行加1操作。</p>
+<p><strong>zookeeper只认绝对路径</strong></p>
+<p>ls /dubbo/com.itheima.service.HelloService/consumers </p>
+<p>转码后</p>
+<p>consumer://192.168.140.1/com.itheima.service.HelloService?application=dubbodemo-consumer&amp;category=consumers&amp;check=false&amp;default.check=false&amp;dubbo=2.6.0&amp;interface=com.itheima.service.HelloService&amp;methods=sayHello&amp;pid=4864&amp;side=consumer&amp;timestamp=1562691361492</p>
+<h4 id="防火墙关闭-3"><a href="#防火墙关闭-3" class="headerlink" title="防火墙关闭"></a>防火墙关闭</h4><p><strong>service iptables stop</strong></p>
+<p><strong>service iptables status</strong></p>
+<p>chkconfig iptables off</p>
+<p><img src="C:/Users/86176/Desktop/img/1562825020676.png" alt="1562825020676"></p>
+<h4 id="简单shell脚本-3"><a href="#简单shell脚本-3" class="headerlink" title="简单shell脚本"></a>简单shell脚本</h4><p>echo 1 &gt; test</p>
+<p>echo  2 &gt; &gt; test </p>
+<ol>
+<li>服务消费方（client）调用以本地调用方式调用服务；</li>
+<li>client stub接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；</li>
+<li>client stub找到服务地址，并将消息发送到服务端；</li>
+<li>server stub收到消息后进行解码；</li>
+<li>server stub根据解码结果调用本地的服务；</li>
+<li>本地服务执行并将结果返回给server stub；</li>
+<li>server stub将返回结果打包成消息并发送至消费方；</li>
+<li>client stub接收到消息，并进行解码；</li>
+<li>服务消费方得到最终结果。</li>
+</ol>
+<h1 id="zookeeper-4"><a href="#zookeeper-4" class="headerlink" title="zookeeper"></a>zookeeper</h1><h4 id="ZooKeeper-提供了什么？-4"><a href="#ZooKeeper-提供了什么？-4" class="headerlink" title=".ZooKeeper 提供了什么？"></a><strong>.ZooKeeper 提供了什么？</strong></h4><ul>
+<li>1、文件系统</li>
+<li>2、通知机制</li>
+</ul>
+<p><strong>Zookeeper作为注册中心</strong></p>
+<p>路径</p>
+<p>/usr/local</p>
+<h4 id="登录zookeeper-4"><a href="#登录zookeeper-4" class="headerlink" title="登录zookeeper"></a>登录zookeeper</h4><p>cd   /export/servers/zookeeper-3.4.9/bin</p>
+<p>./zkCli.sh  </p>
+<p> zkCli.sh –server ip</p>
+<h4 id="zookeeper角色介绍-4"><a href="#zookeeper角色介绍-4" class="headerlink" title="zookeeper角色介绍"></a>zookeeper角色介绍</h4><h1 id="今日重点-5"><a href="#今日重点-5" class="headerlink" title="今日重点"></a>今日重点</h1><ol>
+<li>SOA架构和微服务架构的区别</li>
+<li><strong>Dubbo架构图会画</strong></li>
+<li><strong>Dubbo入门案例</strong></li>
+<li>Dubbo协议的使用场景</li>
+<li>启动时检查</li>
+<li>负载均衡策略</li>
+<li><strong>解决Dubbo无法发布被事务代理的Service问题</strong></li>
+</ol>
+<h1 id="架构相关-5"><a href="#架构相关-5" class="headerlink" title="架构相关"></a>架构相关</h1><h4 id="SOA-和微服务的区别-5"><a href="#SOA-和微服务的区别-5" class="headerlink" title="SOA 和微服务的区别"></a>SOA 和微服务的区别</h4><p>首先<strong>SOA</strong>和<strong>微服务架构</strong>一个层面的东西，而对于<strong>ESB</strong>和<strong>微服务网关</strong>是一个层面的东西，<strong>SOA</strong>谈的是架构风格和方法，微服务架构谈的是实现工具或组件。</p>
+<p> 1<strong>.SOA</strong>（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2<strong>.微服务架构（MicroServices）</strong>:其实和 SOA 架构类似,<strong>微服务是在 SOA 上做的升华</strong>，微服务架构强调的一个重点是“业务需要彻底的<strong>组件化和服务化</strong>”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<h4 id="名词解释-5"><a href="#名词解释-5" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>SOA</strong>(Service-Oriented Architecture)，即面向服务的架构。</p>
+<p><strong>SOA</strong>是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。</p>
+<p><strong>SOA</strong>架构中有两个主要角色：服务提供者（Provider）和服务使用者（Consumer）</p>
+<p><strong>Dubbo是SOA的典型实现</strong></p>
+<p><strong>ESB</strong>全称为Enterprise Service Bus，即<strong>企业服务总线</strong></p>
+<p>1.<strong>ESB（企业服务总线）</strong>，简单 来说 ESB 就是一根管道，用来连接各个服务节点。为了集 成不同系统，不同协议的服务，ESB 做了消息的转化解释和路由工作，让不同的服务互联互通；</p>
+<p>2.<strong>API网关是一个服务器</strong>，是系统的唯一入口,API网关方式的核心要点是，所有的客户端和消费端都通过统一的网关接入微服务</p>
+<table>
+<thead>
+<tr>
+<th align="center">方向</th>
+<th align="center">SOA</th>
+<th align="center">微服务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">解耦</td>
+<td align="center">应用程序服务的可重用性的最大化（相对耦合）</td>
+<td align="center">专注于解耦</td>
+</tr>
+<tr>
+<td align="center">可重用性</td>
+<td align="center">专注于业务功能重用</td>
+<td align="center">更重视“上下文边界”的概念；<br />以最小的依赖关系将组件及其数据耦合为单个单元；<br />通俗的讲一个功能点只专注做一件事</td>
+</tr>
+<tr>
+<td align="center">通信</td>
+<td align="center">ESB（多种消息协议）</td>
+<td align="center">消息系统，轻量级协议，例如HTTP，REST</td>
+</tr>
+<tr>
+<td align="center">数据存储</td>
+<td align="center">SOA服务共享数据存储</td>
+<td align="center">每个微服务可以有一个独立的数据存储</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><img src="C:/Users/86176/Desktop/img/20171112211133030.png" alt="SOA vs. MicroServices架构对比"></p>
+<p>微服务架构：</p>
+<p>具体实现手段：1、分库分表</p>
+<p>2、统一的服务接口</p>
+<p>3、所有的微服务都是独立的Java进程跑在独立的虚拟机上</p>
+<h1 id="Dubbo-5"><a href="#Dubbo-5" class="headerlink" title="Dubbo"></a>Dubbo</h1><h4 id="Dubbo解决了什么问题-5"><a href="#Dubbo解决了什么问题-5" class="headerlink" title="Dubbo解决了什么问题"></a>Dubbo解决了什么问题</h4><ul>
+<li>透明化的远程方法调用，就像<strong>调用本地方法一样调用远程方法</strong>，只需简单配置，没有任何API侵入。</li>
+<li>软负载均衡及容错机制，可在内网替代硬件负载均衡器，降低成本，减少单点。</li>
+<li>服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。</li>
+</ul>
+<p><strong>RPC 主要解决了</strong>：<strong>让分布式或者微服务系统中不同服务之间的调用像本地调用一样简单。</strong></p>
+<h4 id="tar-zxvf-5"><a href="#tar-zxvf-5" class="headerlink" title="tar -zxvf"></a><strong>tar -zxvf</strong></h4><p> z：通过gzip支持压缩或解压缩。还有其他的压缩或解压缩方式，比如j表示bzip2的方式。</p>
+<p>x：解压缩。c是压缩。 </p>
+<p>v：在压缩或解压缩过程中显示正在处理的文件名</p>
+<p>f：f后面必须跟上要处理的文件名。也就是说你不能写成这样 tar -zxfv zhcon-0.2.5.tar.gz </p>
+<p>z代表gzip的压缩包；x代表解压；v代表显示过程信息；f代表后面接的是文件 .</p>
+<h4 id="Dubbo负载均衡-5"><a href="#Dubbo负载均衡-5" class="headerlink" title="Dubbo负载均衡"></a>Dubbo负载均衡</h4><p>RandomLoadBalance（<strong>随机</strong>）：loadbalance=” random”</p>
+<p>RoundRobinLoadBalance（<strong>加权轮循</strong>）：loadbalance=” roundrobin”</p>
+<p>LeastActiveLoadBalance（<strong>最少活跃数</strong>）：loadbalance=” leastactive”</p>
+<p><strong>相同活跃数的随机。使慢的提供者收到更少的</strong></p>
+<p>ConsistentHashLoadBalance（<strong>一致性Hash</strong>）:loadbalance=” consistenthash</p>
+<p>一致性Hash,相同参数的请求总是发到同一个提供者</p>
+<p>缺省只是对第一个参数Hash</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "random")//随机</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "roundrobin")//轮询</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "leastactive")//最少活跃数</span></span><br><span class="line"><span class="meta">@Service</span>(protocol = <span class="string">"dubbo"</span>,loadbalance = <span class="string">"consistenthash"</span>)<span class="comment">//一致性Hash</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>常见点击错误</p>
+<p>一定要点Auto-Import</p>
+<p><img src="C:/Users/86176/Desktop/img/1564996929550.png" alt="1564996929550"></p>
+<p>Dubbo协议</p>
+<table>
+<thead>
+<tr>
+<th>协议名称</th>
+<th>实现描述</th>
+<th>连接</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dubbo</td>
+<td>传输：mina、netty、grizzy  序列化：dubbo、hessian2、java、json</td>
+<td>dubbo缺省采用单一长连接和NIO异步通讯</td>
+<td>1.传入传出参数数据包较小  2.消费者 比提供者多  3.常规远程服务方法调用  4.不适合传送大数据量的服务，比如文件、传视频</td>
+</tr>
+<tr>
+<td>rmi</td>
+<td>传输：java  rmi  序列化：java 标准序列化</td>
+<td>连接个数：多连接  连接方式：短连接  传输协议：TCP/IP  传输方式：BIO</td>
+<td>1.常规RPC调用  2.与原RMI客户端互操作  3.可传文件  4.不支持防火墙穿透</td>
+</tr>
+<tr>
+<td>hessian</td>
+<td>传输：Serverlet容器  序列化：hessian二进制序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者比消费者多  2.可传文件  3.跨语言传输</td>
+</tr>
+<tr>
+<td>http</td>
+<td>传输：servlet容器  序列化：表单序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者多余消费者  2.数据包混合</td>
+</tr>
+<tr>
+<td>webservice</td>
+<td>传输：HTTP  序列化：SOAP文件序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.系统集成  2.跨语言调用</td>
+</tr>
+<tr>
+<td>thrift</td>
+<td>与thrift RPC实现集成，并在基础上修改了报文头</td>
+<td>长连接、NIO异步传输</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>BIO（同步阻塞式IO）是一个连接一个线程。</p>
+<p>NIO（同步非阻塞式IO）是一个请求一个线程。</p>
+<ul>
+<li>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</li>
+<li>NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，JDK1.4开始支持。</li>
+</ul>
+<h4 id="单机结构—–集群结构——分布式结构-5"><a href="#单机结构—–集群结构——分布式结构-5" class="headerlink" title="单机结构—–集群结构——分布式结构"></a><strong>单机结构—–集群结构——分布式结构</strong></h4><p><img src="C:/Users/86176/Desktop/img/v2-e628e972ac34b597ba2c1f7f0d326705_r.jpg" alt="preview"></p>
+<p><strong>分布式结构：</strong>按照业务功能，拆分成一个个独立的子系统，这些子系统能够独立运行在web容器中，它们之间通过RPC方式通信。</p>
+<p>集群和分布式，<br>●集群:很多“人”一起，干一样的事。一个业务模块，部署在多台服务器上。<br>●分布式:很多”人”一起，干不样的事。</p>
+<h4 id="RPC的调用原理-5"><a href="#RPC的调用原理-5" class="headerlink" title="RPC的调用原理"></a><strong>RPC的调用原理</strong></h4><p>​                                        <strong>client</strong>                                                                           <strong>Server</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1576834531069.png" alt="1576834531069"></p>
+<ol>
+<li>服务消费方（client）调用以本地调用方式调用服务；</li>
+<li>client stub接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；</li>
+<li>client stub找到服务地址，并将消息发送到服务端；</li>
+<li>server stub收到消息后进行解码；</li>
+<li>server stub根据解码结果调用本地的服务；</li>
+<li>本地服务执行并将结果返回给server stub；</li>
+<li>server stub将返回结果打包成消息并发送至消费方；</li>
+<li>client stub接收到消息，并进行解码；</li>
+<li>服务消费方得到最终结果。</li>
+</ol>
+<h1 id="zookeeper-5"><a href="#zookeeper-5" class="headerlink" title="zookeeper"></a>zookeeper</h1><h4 id="ZooKeeper-提供了什么？-5"><a href="#ZooKeeper-提供了什么？-5" class="headerlink" title=".ZooKeeper 提供了什么？"></a><strong>.ZooKeeper 提供了什么？</strong></h4><ul>
+<li>1、文件系统</li>
+<li>2、通知机制</li>
+</ul>
+<p><strong>Zookeeper作为注册中心</strong></p>
+<p>路径</p>
+<p>/usr/local</p>
+<h4 id="登录zookeeper-5"><a href="#登录zookeeper-5" class="headerlink" title="登录zookeeper"></a>登录zookeeper</h4><p>cd   /export/servers/zookeeper-3.4.9/bin</p>
+<p>./zkCli.sh  </p>
+<p> zkCli.sh –server ip</p>
+<h4 id="zookeeper角色介绍-5"><a href="#zookeeper角色介绍-5" class="headerlink" title="zookeeper角色介绍"></a>zookeeper角色介绍</h4><p><img src="C:/Users/86176/Desktop/img/1562824741425.png" alt="1562824741425"></p>
+<p><strong>Leader:</strong><br> Zookeeper 集群工作的核心<br> 事务请求（写操作） 的唯一调度和处理者，保证集群事务处理的顺序性；<br> 集群内部各个服务器的调度者。<br> 对于 create， setData， delete 等有写操作的请求，则需要统一转发给leader 处理， leader 需要决定编号、执行操作，这个过程称为一个事务。<br> <strong>Follower:</strong><br> 处理客户端非事务（读操作） 请求，</p>
+<p>转发事务请求给 Leader；</p>
+<p>参与集群 Leader 选举投票 2n-1台可以做集群投票。</p>
+<h4 id="创建节点-4"><a href="#创建节点-4" class="headerlink" title="创建节点"></a>创建节点</h4><p>四种类型的 Znode 节点，分别对应：</p>
+<p>PERSISTENT：永久节点</p>
+<p>EPHEMERAL：临时节点</p>
+<p>PERSISTENT_SEQUENTIAL：永久节点、序列化</p>
+<p>EPHEMERAL_SEQUENTIAL：临时节点、序列化</p>
+<p>创建永久节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 3] create /hello world</p>
+<p>Created /hello </p>
+<p>创建临时节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 5] create -e /abc 123</p>
+<p>Created /abc</p>
+<p>创建永久序列化节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 6] create -s /zhangsan boy</p>
+<p>Created /zhangsan0000000004</p>
+<p>创建临时序列化节点：</p>
+<p>zk: localhost:2181(CONNECTED) 11] create -e -s /lisi boy</p>
+<p>Created /lisi0000000006</p>
+<p><strong>zookeeper节点结构</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1562839549771.png" alt="1562839549771"></p>
+<p><strong>①</strong> stat：此为状态信息, 描述该Znode的版本, 权限等信息</p>
+<p><strong>②</strong> data：与该Znode关联的数据</p>
+<p><strong>③</strong> children：该Znode下的子节点</p>
+<h4 id="查看zookeeper节点信息-4"><a href="#查看zookeeper节点信息-4" class="headerlink" title="查看zookeeper节点信息"></a>查看zookeeper节点信息</h4><p>get 命令  可以获取 Zookeeper指定节点的数据内容和属性信息。 </p>
+<p>ls 命令可以列出 Zookeeper 指定节点下的所有子节点；</p>
+<p>只能查看指定节点下的第一级的所有子节点；</p>
+<p><strong>id</strong>：被推举的Leader的SID。</p>
+<p><strong>zxid</strong>：被推举的Leader事务ID。</p>
+<p>　　<strong>electionEpoch</strong>：逻辑时钟，用来判断多个投票是否在同一轮选举周期中，该值在服务端是一个自增序列，每次进入新一轮的投票后，都会对该值进行加1操作。</p>
+<p><strong>zookeeper只认绝对路径</strong></p>
+<p>ls /dubbo/com.itheima.service.HelloService/consumers </p>
+<p>转码后</p>
+<p>consumer://192.168.140.1/com.itheima.service.HelloService?application=dubbodemo-consumer&amp;category=consumers&amp;check=false&amp;default.check=false&amp;dubbo=2.6.0&amp;interface=com.itheima.service.HelloService&amp;methods=sayHello&amp;pid=4864&amp;side=consumer&amp;timestamp=1562691361492</p>
+<h4 id="防火墙关闭-4"><a href="#防火墙关闭-4" class="headerlink" title="防火墙关闭"></a>防火墙关闭</h4><p><strong>service iptables stop</strong></p>
+<p><strong>service iptables status</strong></p>
+<p>chkconfig iptables off</p>
+<p><img src="C:/Users/86176/Desktop/img/1562825020676.png" alt="1562825020676"></p>
+<h4 id="简单shell脚本-4"><a href="#简单shell脚本-4" class="headerlink" title="简单shell脚本"></a>简单shell脚本</h4><p>echo 1 &gt; test</p>
+<p>echo  2 &gt; &gt; test </p>
+<p><strong>Leader:</strong><br> Zookeeper 集群工作的核心<br> 事务请求（写操作） 的唯一调度和处理者，保证集群事务处理的顺序性；<br> 集群内部各个服务器的调度者。<br> 对于 create， setData， delete 等有写操作的请求，则需要统一转发给leader 处理， leader 需要决定编号、执行操作，这个过程称为一个事务。<br> <strong>Follower:</strong><br> 处理客户端非事务（读操作） 请求，</p>
+<p>转发事务请求给 Leader；</p>
+<p>参与集群 Leader 选举投票 2n-1台可以做集群投票。</p>
+<h4 id="创建节点-5"><a href="#创建节点-5" class="headerlink" title="创建节点"></a>创建节点</h4><p>四种类型的 Znode 节点，分别对应：</p>
+<p>PERSISTENT：永久节点</p>
+<p>EPHEMERAL：临时节点</p>
+<p>PERSISTENT_SEQUENTIAL：永久节点、序列化</p>
+<p>EPHEMERAL_SEQUENTIAL：临时节点、序列化</p>
+<p>创建永久节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 3] create /hello world</p>
+<p>Created /hello </p>
+<p>创建临时节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 5] create -e /abc 123</p>
+<p>Created /abc</p>
+<p>创建永久序列化节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 6] create -s /zhangsan boy</p>
+<p>Created /zhangsan0000000004</p>
+<p>创建临时序列化节点：</p>
+<p>zk: localhost:2181(CONNECTED) 11] create -e -s /lisi boy</p>
+<p>Created /lisi0000000006</p>
+<p><strong>zookeeper节点结构</strong></p>
+<h1 id="今日重点-6"><a href="#今日重点-6" class="headerlink" title="今日重点"></a>今日重点</h1><ol>
+<li>SOA架构和微服务架构的区别</li>
+<li><strong>Dubbo架构图会画</strong></li>
+<li><strong>Dubbo入门案例</strong></li>
+<li>Dubbo协议的使用场景</li>
+<li>启动时检查</li>
+<li>负载均衡策略</li>
+<li><strong>解决Dubbo无法发布被事务代理的Service问题</strong></li>
+</ol>
+<h1 id="架构相关-6"><a href="#架构相关-6" class="headerlink" title="架构相关"></a>架构相关</h1><h4 id="SOA-和微服务的区别-6"><a href="#SOA-和微服务的区别-6" class="headerlink" title="SOA 和微服务的区别"></a>SOA 和微服务的区别</h4><p>首先<strong>SOA</strong>和<strong>微服务架构</strong>一个层面的东西，而对于<strong>ESB</strong>和<strong>微服务网关</strong>是一个层面的东西，<strong>SOA</strong>谈的是架构风格和方法，微服务架构谈的是实现工具或组件。</p>
+<p> 1<strong>.SOA</strong>（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2<strong>.微服务架构（MicroServices）</strong>:其实和 SOA 架构类似,<strong>微服务是在 SOA 上做的升华</strong>，微服务架构强调的一个重点是“业务需要彻底的<strong>组件化和服务化</strong>”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<h4 id="名词解释-6"><a href="#名词解释-6" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>SOA</strong>(Service-Oriented Architecture)，即面向服务的架构。</p>
+<p><strong>SOA</strong>是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。</p>
+<p><strong>SOA</strong>架构中有两个主要角色：服务提供者（Provider）和服务使用者（Consumer）</p>
+<p><strong>Dubbo是SOA的典型实现</strong></p>
+<p><strong>ESB</strong>全称为Enterprise Service Bus，即<strong>企业服务总线</strong></p>
+<p>1.<strong>ESB（企业服务总线）</strong>，简单 来说 ESB 就是一根管道，用来连接各个服务节点。为了集 成不同系统，不同协议的服务，ESB 做了消息的转化解释和路由工作，让不同的服务互联互通；</p>
+<p>2.<strong>API网关是一个服务器</strong>，是系统的唯一入口,API网关方式的核心要点是，所有的客户端和消费端都通过统一的网关接入微服务</p>
+<table>
+<thead>
+<tr>
+<th align="center">方向</th>
+<th align="center">SOA</th>
+<th align="center">微服务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">解耦</td>
+<td align="center">应用程序服务的可重用性的最大化（相对耦合）</td>
+<td align="center">专注于解耦</td>
+</tr>
+<tr>
+<td align="center">可重用性</td>
+<td align="center">专注于业务功能重用</td>
+<td align="center">更重视“上下文边界”的概念；<br />以最小的依赖关系将组件及其数据耦合为单个单元；<br />通俗的讲一个功能点只专注做一件事</td>
+</tr>
+<tr>
+<td align="center">通信</td>
+<td align="center">ESB（多种消息协议）</td>
+<td align="center">消息系统，轻量级协议，例如HTTP，REST</td>
+</tr>
+<tr>
+<td align="center">数据存储</td>
+<td align="center">SOA服务共享数据存储</td>
+<td align="center">每个微服务可以有一个独立的数据存储</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><img src="C:/Users/86176/Desktop/img/20171112211133030.png" alt="SOA vs. MicroServices架构对比"></p>
+<p>微服务架构：</p>
+<p>具体实现手段：1、分库分表</p>
+<p>2、统一的服务接口</p>
+<p>3、所有的微服务都是独立的Java进程跑在独立的虚拟机上</p>
+<h1 id="Dubbo-6"><a href="#Dubbo-6" class="headerlink" title="Dubbo"></a>Dubbo</h1><h4 id="Dubbo解决了什么问题-6"><a href="#Dubbo解决了什么问题-6" class="headerlink" title="Dubbo解决了什么问题"></a>Dubbo解决了什么问题</h4><ul>
+<li>透明化的远程方法调用，就像<strong>调用本地方法一样调用远程方法</strong>，只需简单配置，没有任何API侵入。</li>
+<li>软负载均衡及容错机制，可在内网替代硬件负载均衡器，降低成本，减少单点。</li>
+<li>服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。</li>
+</ul>
+<p><strong>RPC 主要解决了</strong>：<strong>让分布式或者微服务系统中不同服务之间的调用像本地调用一样简单。</strong></p>
+<h4 id="tar-zxvf-6"><a href="#tar-zxvf-6" class="headerlink" title="tar -zxvf"></a><strong>tar -zxvf</strong></h4><p> z：通过gzip支持压缩或解压缩。还有其他的压缩或解压缩方式，比如j表示bzip2的方式。</p>
+<p>x：解压缩。c是压缩。 </p>
+<p>v：在压缩或解压缩过程中显示正在处理的文件名</p>
+<p>f：f后面必须跟上要处理的文件名。也就是说你不能写成这样 tar -zxfv zhcon-0.2.5.tar.gz </p>
+<p>z代表gzip的压缩包；x代表解压；v代表显示过程信息；f代表后面接的是文件 .</p>
+<h4 id="Dubbo负载均衡-6"><a href="#Dubbo负载均衡-6" class="headerlink" title="Dubbo负载均衡"></a>Dubbo负载均衡</h4><p>RandomLoadBalance（<strong>随机</strong>）：loadbalance=” random”</p>
+<p>RoundRobinLoadBalance（<strong>加权轮循</strong>）：loadbalance=” roundrobin”</p>
+<p>LeastActiveLoadBalance（<strong>最少活跃数</strong>）：loadbalance=” leastactive”</p>
+<p><strong>相同活跃数的随机。使慢的提供者收到更少的</strong></p>
+<p>ConsistentHashLoadBalance（<strong>一致性Hash</strong>）:loadbalance=” consistenthash</p>
+<p>一致性Hash,相同参数的请求总是发到同一个提供者</p>
+<p>缺省只是对第一个参数Hash</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "random")//随机</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "roundrobin")//轮询</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "leastactive")//最少活跃数</span></span><br><span class="line"><span class="meta">@Service</span>(protocol = <span class="string">"dubbo"</span>,loadbalance = <span class="string">"consistenthash"</span>)<span class="comment">//一致性Hash</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>常见点击错误</p>
+<p>一定要点Auto-Import</p>
+<p><img src="C:/Users/86176/Desktop/img/1564996929550.png" alt="1564996929550"></p>
+<p>Dubbo协议</p>
+<table>
+<thead>
+<tr>
+<th>协议名称</th>
+<th>实现描述</th>
+<th>连接</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dubbo</td>
+<td>传输：mina、netty、grizzy  序列化：dubbo、hessian2、java、json</td>
+<td>dubbo缺省采用单一长连接和NIO异步通讯</td>
+<td>1.传入传出参数数据包较小  2.消费者 比提供者多  3.常规远程服务方法调用  4.不适合传送大数据量的服务，比如文件、传视频</td>
+</tr>
+<tr>
+<td>rmi</td>
+<td>传输：java  rmi  序列化：java 标准序列化</td>
+<td>连接个数：多连接  连接方式：短连接  传输协议：TCP/IP  传输方式：BIO</td>
+<td>1.常规RPC调用  2.与原RMI客户端互操作  3.可传文件  4.不支持防火墙穿透</td>
+</tr>
+<tr>
+<td>hessian</td>
+<td>传输：Serverlet容器  序列化：hessian二进制序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者比消费者多  2.可传文件  3.跨语言传输</td>
+</tr>
+<tr>
+<td>http</td>
+<td>传输：servlet容器  序列化：表单序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者多余消费者  2.数据包混合</td>
+</tr>
+<tr>
+<td>webservice</td>
+<td>传输：HTTP  序列化：SOAP文件序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.系统集成  2.跨语言调用</td>
+</tr>
+<tr>
+<td>thrift</td>
+<td>与thrift RPC实现集成，并在基础上修改了报文头</td>
+<td>长连接、NIO异步传输</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>BIO（同步阻塞式IO）是一个连接一个线程。</p>
+<p>NIO（同步非阻塞式IO）是一个请求一个线程。</p>
+<ul>
+<li>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</li>
+<li>NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，JDK1.4开始支持。</li>
+</ul>
+<h4 id="单机结构—–集群结构——分布式结构-6"><a href="#单机结构—–集群结构——分布式结构-6" class="headerlink" title="单机结构—–集群结构——分布式结构"></a><strong>单机结构—–集群结构——分布式结构</strong></h4><p><img src="C:/Users/86176/Desktop/img/v2-e628e972ac34b597ba2c1f7f0d326705_r.jpg" alt="preview"></p>
+<p><strong>分布式结构：</strong>按照业务功能，拆分成一个个独立的子系统，这些子系统能够独立运行在web容器中，它们之间通过RPC方式通信。</p>
+<p>集群和分布式，<br>●集群:很多“人”一起，干一样的事。一个业务模块，部署在多台服务器上。<br>●分布式:很多”人”一起，干不样的事。</p>
+<h4 id="RPC的调用原理-6"><a href="#RPC的调用原理-6" class="headerlink" title="RPC的调用原理"></a><strong>RPC的调用原理</strong></h4><p>​                                        <strong>client</strong>                                                                           <strong>Server</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1576834531069.png" alt="1576834531069"></p>
+<ol>
+<li>服务消费方（client）调用以本地调用方式调用服务；</li>
+<li>client stub接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；</li>
+<li>client stub找到服务地址，并将消息发送到服务端；</li>
+<li>server stub收到消息后进行解码；</li>
+<li>server stub根据解码结果调用本地的服务；</li>
+<li>本地服务执行并将结果返回给server stub；</li>
+<li>server stub将返回结果打包成消息并发送至消费方；</li>
+<li>client stub接收到消息，并进行解码；</li>
+<li>服务消费方得到最终结果。</li>
+</ol>
+<h1 id="zookeeper-6"><a href="#zookeeper-6" class="headerlink" title="zookeeper"></a>zookeeper</h1><h4 id="ZooKeeper-提供了什么？-6"><a href="#ZooKeeper-提供了什么？-6" class="headerlink" title=".ZooKeeper 提供了什么？"></a><strong>.ZooKeeper 提供了什么？</strong></h4><ul>
+<li>1、文件系统</li>
+<li>2、通知机制</li>
+</ul>
+<p><strong>Zookeeper作为注册中心</strong></p>
+<p>路径</p>
+<p>/usr/local</p>
+<h4 id="登录zookeeper-6"><a href="#登录zookeeper-6" class="headerlink" title="登录zookeeper"></a>登录zookeeper</h4><p>cd   /export/servers/zookeeper-3.4.9/bin</p>
+<p>./zkCli.sh  </p>
+<p> zkCli.sh –server ip</p>
+<h4 id="zookeeper角色介绍-6"><a href="#zookeeper角色介绍-6" class="headerlink" title="zookeeper角色介绍"></a>zookeeper角色介绍</h4><p><img src="C:/Users/86176/Desktop/img/1562824741425.png" alt="1562824741425"></p>
+<p><strong>Leader:</strong><br> Zookeeper 集群工作的核心<br> 事务请求（写操作） 的唯一调度和处理者，保证集群事务处理的顺序性；<br> 集群内部各个服务器的调度者。<br> 对于 create， setData， delete 等有写操作的请求，则需要统一转发给leader 处理， leader 需要决定编号、执行操作，这个过程称为一个事务。<br> <strong>Follower:</strong><br> 处理客户端非事务（读操作） 请求，</p>
+<p>转发事务请求给 Leader；</p>
+<p>参与集群 Leader 选举投票 2n-1台可以做集群投票。</p>
+<h4 id="创建节点-6"><a href="#创建节点-6" class="headerlink" title="创建节点"></a>创建节点</h4><p>四种类型的 Znode 节点，分别对应：</p>
+<p>PERSISTENT：永久节点</p>
+<p>EPHEMERAL：临时节点</p>
+<p>PERSISTENT_SEQUENTIAL：永久节点、序列化</p>
+<p>EPHEMERAL_SEQUENTIAL：临时节点、序列化</p>
+<p>创建永久节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 3] create /hello world</p>
+<p>Created /hello </p>
+<p>创建临时节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 5] create -e /abc 123</p>
+<p>Created /abc</p>
+<p>创建永久序列化节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 6] create -s /zhangsan boy</p>
+<p>Created /zhangsan0000000004</p>
+<p>创建临时序列化节点：</p>
+<p>zk: localhost:2181(CONNECTED) 11] create -e -s /lisi boy</p>
+<p>Created /lisi0000000006</p>
+<p><strong>zookeeper节点结构</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1562839549771.png" alt="1562839549771"></p>
+<p><strong>①</strong> stat：此为状态信息, 描述该Znode的版本, 权限等信息</p>
+<p><strong>②</strong> data：与该Znode关联的数据</p>
+<p><strong>③</strong> children：该Znode下的子节点</p>
+<h4 id="查看zookeeper节点信息-5"><a href="#查看zookeeper节点信息-5" class="headerlink" title="查看zookeeper节点信息"></a>查看zookeeper节点信息</h4><p>get 命令  可以获取 Zookeeper指定节点的数据内容和属性信息。 </p>
+<p>ls 命令可以列出 Zookeeper 指定节点下的所有子节点；</p>
+<p>只能查看指定节点下的第一级的所有子节点；</p>
+<p><strong>id</strong>：被推举的Leader的SID。</p>
+<p><strong>zxid</strong>：被推举的Leader事务ID。</p>
+<p>　　<strong>electionEpoch</strong>：逻辑时钟，用来判断多个投票是否在同一轮选举周期中，该值在服务端是一个自增序列，每次进入新一轮的投票后，都会对该值进行加1操作。</p>
+<p><strong>zookeeper只认绝对路径</strong></p>
+<p>ls /dubbo/com.itheima.service.HelloService/consumers </p>
+<p>转码后</p>
+<p>consumer://192.168.140.1/com.itheima.service.HelloService?application=dubbodemo-consumer&amp;category=consumers&amp;check=false&amp;default.check=false&amp;dubbo=2.6.0&amp;interface=com.itheima.service.HelloService&amp;methods=sayHello&amp;pid=4864&amp;side=consumer&amp;timestamp=1562691361492</p>
+<h4 id="防火墙关闭-5"><a href="#防火墙关闭-5" class="headerlink" title="防火墙关闭"></a>防火墙关闭</h4><p><strong>service iptables stop</strong></p>
+<p><strong>service iptables status</strong></p>
+<p>chkconfig iptables off</p>
+<p><img src="C:/Users/86176/Desktop/img/1562825020676.png" alt="1562825020676"></p>
+<h4 id="简单shell脚本-5"><a href="#简单shell脚本-5" class="headerlink" title="简单shell脚本"></a>简单shell脚本</h4><p>echo 1 &gt; test</p>
+<p>echo  2 &gt; &gt; test </p>
+<p><strong>①</strong> stat：此为状态信息, 描述该Znode的版本, 权限等信息</p>
+<p><strong>②</strong> data：与该Znode关联的数据</p>
+<p><strong>③</strong> children：该Znode下的子节点</p>
+<h4 id="查看zookeeper节点信息-6"><a href="#查看zookeeper节点信息-6" class="headerlink" title="查看zookeeper节点信息"></a>查看zookeeper节点信息</h4><p>get 命令  可以获取 Zookeeper指定节点的数据内容和属性信息。 </p>
+<p>ls 命令可以列出 Zookeeper 指定节点下的所有子节点；</p>
+<p>只能查看指定节点下的第一级的所有子节点；</p>
+<p><strong>id</strong>：被推举的Leader的SID。</p>
+<p><strong>zxid</strong>：被推举的Leader事务ID。</p>
+<p>　　<strong>electionEpoch</strong>：逻辑时钟，用来判断多个投票是否在同一轮选举周期中，该值在服务端是一个自增序列，每次进入新一轮的投票后，都会对该值进行加1操作。</p>
+<p><strong>zookeeper只认绝对路径</strong></p>
+<p>ls /dubbo/com.itheima.service.HelloService/consumers </p>
+<p>转码后</p>
+<p>consumer://192.168.140.1/com.itheima.service.HelloService?application=dubbodemo-consumer&amp;category=consumers&amp;check=false&amp;default.check=false&amp;dubbo=2.6.0&amp;interface=com.itheima.service.HelloService&amp;methods=sayHello&amp;pid=4864&amp;side=consumer&amp;timestamp=1562691361492</p>
+<h4 id="防火墙关闭-6"><a href="#防火墙关闭-6" class="headerlink" title="防火墙关闭"></a>防火墙关闭</h4><p><strong>service iptables stop</strong></p>
+<p><strong>service iptables status</strong></p>
+<p>chkconfig iptables off</p>
+<h1 id="今日重点-7"><a href="#今日重点-7" class="headerlink" title="今日重点"></a>今日重点</h1><ol>
+<li>SOA架构和微服务架构的区别</li>
+<li><strong>Dubbo架构图会画</strong></li>
+<li><strong>Dubbo入门案例</strong></li>
+<li>Dubbo协议的使用场景</li>
+<li>启动时检查</li>
+<li>负载均衡策略</li>
+<li><strong>解决Dubbo无法发布被事务代理的Service问题</strong></li>
+</ol>
+<h1 id="架构相关-7"><a href="#架构相关-7" class="headerlink" title="架构相关"></a>架构相关</h1><h4 id="SOA-和微服务的区别-7"><a href="#SOA-和微服务的区别-7" class="headerlink" title="SOA 和微服务的区别"></a>SOA 和微服务的区别</h4><p>首先<strong>SOA</strong>和<strong>微服务架构</strong>一个层面的东西，而对于<strong>ESB</strong>和<strong>微服务网关</strong>是一个层面的东西，<strong>SOA</strong>谈的是架构风格和方法，微服务架构谈的是实现工具或组件。</p>
+<p> 1<strong>.SOA</strong>（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2<strong>.微服务架构（MicroServices）</strong>:其实和 SOA 架构类似,<strong>微服务是在 SOA 上做的升华</strong>，微服务架构强调的一个重点是“业务需要彻底的<strong>组件化和服务化</strong>”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<h4 id="名词解释-7"><a href="#名词解释-7" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>SOA</strong>(Service-Oriented Architecture)，即面向服务的架构。</p>
+<p><strong>SOA</strong>是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。</p>
+<p><strong>SOA</strong>架构中有两个主要角色：服务提供者（Provider）和服务使用者（Consumer）</p>
+<p><strong>Dubbo是SOA的典型实现</strong></p>
+<p><strong>ESB</strong>全称为Enterprise Service Bus，即<strong>企业服务总线</strong></p>
+<p>1.<strong>ESB（企业服务总线）</strong>，简单 来说 ESB 就是一根管道，用来连接各个服务节点。为了集 成不同系统，不同协议的服务，ESB 做了消息的转化解释和路由工作，让不同的服务互联互通；</p>
+<p>2.<strong>API网关是一个服务器</strong>，是系统的唯一入口,API网关方式的核心要点是，所有的客户端和消费端都通过统一的网关接入微服务</p>
+<table>
+<thead>
+<tr>
+<th align="center">方向</th>
+<th align="center">SOA</th>
+<th align="center">微服务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">解耦</td>
+<td align="center">应用程序服务的可重用性的最大化（相对耦合）</td>
+<td align="center">专注于解耦</td>
+</tr>
+<tr>
+<td align="center">可重用性</td>
+<td align="center">专注于业务功能重用</td>
+<td align="center">更重视“上下文边界”的概念；<br />以最小的依赖关系将组件及其数据耦合为单个单元；<br />通俗的讲一个功能点只专注做一件事</td>
+</tr>
+<tr>
+<td align="center">通信</td>
+<td align="center">ESB（多种消息协议）</td>
+<td align="center">消息系统，轻量级协议，例如HTTP，REST</td>
+</tr>
+<tr>
+<td align="center">数据存储</td>
+<td align="center">SOA服务共享数据存储</td>
+<td align="center">每个微服务可以有一个独立的数据存储</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><img src="C:/Users/86176/Desktop/img/20171112211133030.png" alt="SOA vs. MicroServices架构对比"></p>
+<p>微服务架构：</p>
+<p>具体实现手段：1、分库分表</p>
+<p>2、统一的服务接口</p>
+<p>3、所有的微服务都是独立的Java进程跑在独立的虚拟机上</p>
+<h1 id="Dubbo-7"><a href="#Dubbo-7" class="headerlink" title="Dubbo"></a>Dubbo</h1><h4 id="Dubbo解决了什么问题-7"><a href="#Dubbo解决了什么问题-7" class="headerlink" title="Dubbo解决了什么问题"></a>Dubbo解决了什么问题</h4><ul>
+<li>透明化的远程方法调用，就像<strong>调用本地方法一样调用远程方法</strong>，只需简单配置，没有任何API侵入。</li>
+<li>软负载均衡及容错机制，可在内网替代硬件负载均衡器，降低成本，减少单点。</li>
+<li>服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。</li>
+</ul>
+<p><strong>RPC 主要解决了</strong>：<strong>让分布式或者微服务系统中不同服务之间的调用像本地调用一样简单。</strong></p>
+<h4 id="tar-zxvf-7"><a href="#tar-zxvf-7" class="headerlink" title="tar -zxvf"></a><strong>tar -zxvf</strong></h4><p> z：通过gzip支持压缩或解压缩。还有其他的压缩或解压缩方式，比如j表示bzip2的方式。</p>
+<p>x：解压缩。c是压缩。 </p>
+<p>v：在压缩或解压缩过程中显示正在处理的文件名</p>
+<p>f：f后面必须跟上要处理的文件名。也就是说你不能写成这样 tar -zxfv zhcon-0.2.5.tar.gz </p>
+<p>z代表gzip的压缩包；x代表解压；v代表显示过程信息；f代表后面接的是文件 .</p>
+<h4 id="Dubbo负载均衡-7"><a href="#Dubbo负载均衡-7" class="headerlink" title="Dubbo负载均衡"></a>Dubbo负载均衡</h4><p>RandomLoadBalance（<strong>随机</strong>）：loadbalance=” random”</p>
+<p>RoundRobinLoadBalance（<strong>加权轮循</strong>）：loadbalance=” roundrobin”</p>
+<p>LeastActiveLoadBalance（<strong>最少活跃数</strong>）：loadbalance=” leastactive”</p>
+<p><strong>相同活跃数的随机。使慢的提供者收到更少的</strong></p>
+<p>ConsistentHashLoadBalance（<strong>一致性Hash</strong>）:loadbalance=” consistenthash</p>
+<p>一致性Hash,相同参数的请求总是发到同一个提供者</p>
+<p>缺省只是对第一个参数Hash</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "random")//随机</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "roundrobin")//轮询</span></span><br><span class="line"><span class="comment">//@Service(protocol = "dubbo",loadbalance = "leastactive")//最少活跃数</span></span><br><span class="line"><span class="meta">@Service</span>(protocol = <span class="string">"dubbo"</span>,loadbalance = <span class="string">"consistenthash"</span>)<span class="comment">//一致性Hash</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>常见点击错误</p>
+<p>一定要点Auto-Import</p>
+<p><img src="C:/Users/86176/Desktop/img/1564996929550.png" alt="1564996929550"></p>
+<p>Dubbo协议</p>
+<table>
+<thead>
+<tr>
+<th>协议名称</th>
+<th>实现描述</th>
+<th>连接</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dubbo</td>
+<td>传输：mina、netty、grizzy  序列化：dubbo、hessian2、java、json</td>
+<td>dubbo缺省采用单一长连接和NIO异步通讯</td>
+<td>1.传入传出参数数据包较小  2.消费者 比提供者多  3.常规远程服务方法调用  4.不适合传送大数据量的服务，比如文件、传视频</td>
+</tr>
+<tr>
+<td>rmi</td>
+<td>传输：java  rmi  序列化：java 标准序列化</td>
+<td>连接个数：多连接  连接方式：短连接  传输协议：TCP/IP  传输方式：BIO</td>
+<td>1.常规RPC调用  2.与原RMI客户端互操作  3.可传文件  4.不支持防火墙穿透</td>
+</tr>
+<tr>
+<td>hessian</td>
+<td>传输：Serverlet容器  序列化：hessian二进制序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者比消费者多  2.可传文件  3.跨语言传输</td>
+</tr>
+<tr>
+<td>http</td>
+<td>传输：servlet容器  序列化：表单序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.提供者多余消费者  2.数据包混合</td>
+</tr>
+<tr>
+<td>webservice</td>
+<td>传输：HTTP  序列化：SOAP文件序列化</td>
+<td>连接个数：多连接     连接方式：短连接     传输协议：HTTP     传输方式：同步传输</td>
+<td>1.系统集成  2.跨语言调用</td>
+</tr>
+<tr>
+<td>thrift</td>
+<td>与thrift RPC实现集成，并在基础上修改了报文头</td>
+<td>长连接、NIO异步传输</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>BIO（同步阻塞式IO）是一个连接一个线程。</p>
+<p>NIO（同步非阻塞式IO）是一个请求一个线程。</p>
+<ul>
+<li>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</li>
+<li>NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，JDK1.4开始支持。</li>
+</ul>
+<h4 id="单机结构—–集群结构——分布式结构-7"><a href="#单机结构—–集群结构——分布式结构-7" class="headerlink" title="单机结构—–集群结构——分布式结构"></a><strong>单机结构—–集群结构——分布式结构</strong></h4><p><img src="C:/Users/86176/Desktop/img/v2-e628e972ac34b597ba2c1f7f0d326705_r.jpg" alt="preview"></p>
+<p><strong>分布式结构：</strong>按照业务功能，拆分成一个个独立的子系统，这些子系统能够独立运行在web容器中，它们之间通过RPC方式通信。</p>
+<p>集群和分布式，<br>●集群:很多“人”一起，干一样的事。一个业务模块，部署在多台服务器上。<br>●分布式:很多”人”一起，干不样的事。</p>
+<h4 id="RPC的调用原理-7"><a href="#RPC的调用原理-7" class="headerlink" title="RPC的调用原理"></a><strong>RPC的调用原理</strong></h4><p>​                                        <strong>client</strong>                                                                           <strong>Server</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1576834531069.png" alt="1576834531069"></p>
+<ol>
+<li>服务消费方（client）调用以本地调用方式调用服务；</li>
+<li>client stub接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；</li>
+<li>client stub找到服务地址，并将消息发送到服务端；</li>
+<li>server stub收到消息后进行解码；</li>
+<li>server stub根据解码结果调用本地的服务；</li>
+<li>本地服务执行并将结果返回给server stub；</li>
+<li>server stub将返回结果打包成消息并发送至消费方；</li>
+<li>client stub接收到消息，并进行解码；</li>
+<li>服务消费方得到最终结果。</li>
+</ol>
+<h1 id="zookeeper-7"><a href="#zookeeper-7" class="headerlink" title="zookeeper"></a>zookeeper</h1><h4 id="ZooKeeper-提供了什么？-7"><a href="#ZooKeeper-提供了什么？-7" class="headerlink" title=".ZooKeeper 提供了什么？"></a><strong>.ZooKeeper 提供了什么？</strong></h4><ul>
+<li>1、文件系统</li>
+<li>2、通知机制</li>
+</ul>
+<p><strong>Zookeeper作为注册中心</strong></p>
+<p>路径</p>
+<p>/usr/local</p>
+<h4 id="登录zookeeper-7"><a href="#登录zookeeper-7" class="headerlink" title="登录zookeeper"></a>登录zookeeper</h4><p>cd   /export/servers/zookeeper-3.4.9/bin</p>
+<p>./zkCli.sh  </p>
+<p> zkCli.sh –server ip</p>
+<h4 id="zookeeper角色介绍-7"><a href="#zookeeper角色介绍-7" class="headerlink" title="zookeeper角色介绍"></a>zookeeper角色介绍</h4><p><img src="C:/Users/86176/Desktop/img/1562824741425.png" alt="1562824741425"></p>
+<p><strong>Leader:</strong><br> Zookeeper 集群工作的核心<br> 事务请求（写操作） 的唯一调度和处理者，保证集群事务处理的顺序性；<br> 集群内部各个服务器的调度者。<br> 对于 create， setData， delete 等有写操作的请求，则需要统一转发给leader 处理， leader 需要决定编号、执行操作，这个过程称为一个事务。<br> <strong>Follower:</strong><br> 处理客户端非事务（读操作） 请求，</p>
+<p>转发事务请求给 Leader；</p>
+<p>参与集群 Leader 选举投票 2n-1台可以做集群投票。</p>
+<h4 id="创建节点-7"><a href="#创建节点-7" class="headerlink" title="创建节点"></a>创建节点</h4><p>四种类型的 Znode 节点，分别对应：</p>
+<p>PERSISTENT：永久节点</p>
+<p>EPHEMERAL：临时节点</p>
+<p>PERSISTENT_SEQUENTIAL：永久节点、序列化</p>
+<p>EPHEMERAL_SEQUENTIAL：临时节点、序列化</p>
+<p>创建永久节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 3] create /hello world</p>
+<p>Created /hello </p>
+<p>创建临时节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 5] create -e /abc 123</p>
+<p>Created /abc</p>
+<p>创建永久序列化节点：</p>
+<p>[zk: localhost:2181(CONNECTED) 6] create -s /zhangsan boy</p>
+<p>Created /zhangsan0000000004</p>
+<p>创建临时序列化节点：</p>
+<p>zk: localhost:2181(CONNECTED) 11] create -e -s /lisi boy</p>
+<p>Created /lisi0000000006</p>
+<p><strong>zookeeper节点结构</strong></p>
+<p><img src="C:/Users/86176/Desktop/img/1562839549771.png" alt="1562839549771"></p>
+<p><strong>①</strong> stat：此为状态信息, 描述该Znode的版本, 权限等信息</p>
+<p><strong>②</strong> data：与该Znode关联的数据</p>
+<p><strong>③</strong> children：该Znode下的子节点</p>
+<h4 id="查看zookeeper节点信息-7"><a href="#查看zookeeper节点信息-7" class="headerlink" title="查看zookeeper节点信息"></a>查看zookeeper节点信息</h4><p>get 命令  可以获取 Zookeeper指定节点的数据内容和属性信息。 </p>
+<p>ls 命令可以列出 Zookeeper 指定节点下的所有子节点；</p>
+<p>只能查看指定节点下的第一级的所有子节点；</p>
+<p><strong>id</strong>：被推举的Leader的SID。</p>
+<p><strong>zxid</strong>：被推举的Leader事务ID。</p>
+<p>　　<strong>electionEpoch</strong>：逻辑时钟，用来判断多个投票是否在同一轮选举周期中，该值在服务端是一个自增序列，每次进入新一轮的投票后，都会对该值进行加1操作。</p>
+<p><strong>zookeeper只认绝对路径</strong></p>
+<p>ls /dubbo/com.itheima.service.HelloService/consumers </p>
+<p>转码后</p>
+<p>consumer://192.168.140.1/com.itheima.service.HelloService?application=dubbodemo-consumer&amp;category=consumers&amp;check=false&amp;default.check=false&amp;dubbo=2.6.0&amp;interface=com.itheima.service.HelloService&amp;methods=sayHello&amp;pid=4864&amp;side=consumer&amp;timestamp=1562691361492</p>
+<h4 id="防火墙关闭-7"><a href="#防火墙关闭-7" class="headerlink" title="防火墙关闭"></a>防火墙关闭</h4><p><strong>service iptables stop</strong></p>
+<p><strong>service iptables status</strong></p>
+<p>chkconfig iptables off</p>
+<p><img src="C:/Users/86176/Desktop/img/1562825020676.png" alt="1562825020676"></p>
+<h4 id="简单shell脚本-6"><a href="#简单shell脚本-6" class="headerlink" title="简单shell脚本"></a>简单shell脚本</h4><p>echo 1 &gt; test</p>
+<p>echo  2 &gt; &gt; test </p>
+<h4 id="简单shell脚本-7"><a href="#简单shell脚本-7" class="headerlink" title="简单shell脚本"></a>简单shell脚本</h4><p>echo 1 &gt; test</p>
+<p>echo  2 &gt; &gt; test </p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://tongweiwei14.gitee.io/2020/04/09/zookeeper%E6%89%A9%E5%B1%95/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://tongweiwei14.gitee.io/2020/04/09/zookeeper%E6%89%A9%E5%B1%95/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " target="_blank" rel="noopener" style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
